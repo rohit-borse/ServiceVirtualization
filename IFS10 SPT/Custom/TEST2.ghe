@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1689929983485" createdUser="RBO152"
+    id="-7142cb19:1896e019959:-3386" type="environment_resource"
+    updatedTimestamp="1690097108718" updatedUser="RBO152" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
+        <environmentVariable evdescription="" key="clientgateway" value="default"/>
+        <environmentVariable evdescription="" key="Host" value="atapifsv1ifs01.crb.apmoller.net"/>
+        <environmentVariable evdescription="" key="httpHeaders/host" value="atapifsv1ifs01.crb.apmoller.net:48080"/>
+        <environmentVariable evdescription=""
+            key="OpenIDConnect/code_challenge" value="uKjG6QJMsVCe9L6l7vS9jx3yNHxqsER8-xPBOUHjHU8"/>
+        <environmentVariable evdescription=""
+            key="OpenIDConnect/Code_verifier" value="c19e7cfa627a4ea33e2c3df1581ac8dd6807059644c57c449d8deee38a559234"/>
+        <environmentVariable evdescription=""
+            key="OpenIDConnect/redirect_uri" value="https://atapifsv1ifs01.crb.apmoller.net:48080/main/default/clientgateway/oauth2/callback"/>
+        <environmentVariable evdescription="" key="Port" value="48080"/>
+        <environmentVariable evdescription="" key="Proxy/Host" value="10.255.237.20"/>
+        <environmentVariable evdescription="" key="Proxy/Port" value="8887"/>
+        <evbindings>
+            <evbinding evLogicalItemId="-7142cb19:1896e019959:-7ea4" evPhysicalItemId="-7142cb19:1896e019959:-7ebd"/>
+            <evbinding evLogicalItemId="-7142cb19:1896e019959:713f" evPhysicalItemId="-7142cb19:1896e019959:7140"/>
+        </evbindings>
+    </resourceConfig>
+</editableResource>

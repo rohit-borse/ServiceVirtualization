@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1690039640883" createdUser="RBO152"
+    id="-29d32ef2:1897e05511e:-6f38"
+    selfDescribing="New Layout Record Layout" type="record_layout"
+    updatedTimestamp="1690039857917" updatedUser="RBO152" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig schemaSourceTemplateName="Record Layout">
+        <schemaSourceConfig layoutType="Delimited" name="New Layout">
+            <layout>
+                <delimPacketiser encoding="UTF-8" packetiserType="Split" writeEnabled="true">
+                    <packetiserConfig firstSplitOnly="false"
+                        newLine="false" processLastEmptyPacket="false"
+                        splitToken="," splitTokenEncoding="UTF-8" writeLastPacketWithToken="false"/>
+                </delimPacketiser>
+                <delimFields>
+                    <field contentType="String" default=""
+                        grouping="false" id="16900394632621"
+                        inclusion="Mandatory" name="Bearer realm">
+                        <format enabled="true">
+                            <category type="STRING">
+                                <custom indefault="false"
+                                    outdefault="false" outpattern="%1$s"
+                                    type="STRING" use="false">
+                                    <inlocale country="US" language="en" variant=""/>
+                                    <outlocale country="US"
+                                    language="en" variant=""/>
+                                </custom>
+                            </category>
+                            <common customLength="0"
+                                isCustomLength="true"
+                                justification="LEFT" left=" " right=" " trim="false"/>
+                        </format>
+                    </field>
+                    <field contentType="String" default=""
+                        grouping="true" id="16900394832742"
+                        inclusion="Mandatory" name="Client">
+                        <format enabled="true">
+                            <category type="STRING">
+                                <custom indefault="false"
+                                    outdefault="false" outpattern="%1$s"
+                                    type="STRING" use="false">
+                                    <inlocale country="US" language="en" variant=""/>
+                                    <outlocale country="US"
+                                    language="en" variant=""/>
+                                </custom>
+                            </category>
+                            <common customLength="0"
+                                isCustomLength="true"
+                                justification="LEFT" left=" " right=" " trim="false"/>
+                        </format>
+                    </field>
+                    <field contentType="String" default=""
+                        grouping="false" id="16900395562043"
+                        inclusion="Mandatory" name="scope">
+                        <format enabled="true">
+                            <category type="STRING">
+                                <custom indefault="false"
+                                    outdefault="false" outpattern="%1$s"
+                                    type="STRING" use="false">
+                                    <inlocale country="US" language="en" variant=""/>
+                                    <outlocale country="US"
+                                    language="en" variant=""/>
+                                </custom>
+                            </category>
+                            <common customLength="0"
+                                isCustomLength="true"
+                                justification="LEFT" left=" " right=" " trim="false"/>
+                        </format>
+                    </field>
+                    <field contentType="String" default=""
+                        grouping="false" id="16900395794714"
+                        inclusion="Mandatory" name="authorization_uri">
+                        <format enabled="true">
+                            <category type="STRING">
+                                <custom indefault="false"
+                                    outdefault="false" outpattern="%1$s"
+                                    type="STRING" use="false">
+                                    <inlocale country="US" language="en" variant=""/>
+                                    <outlocale country="US"
+                                    language="en" variant=""/>
+                                </custom>
+                            </category>
+                            <common customLength="0"
+                                isCustomLength="true"
+                                justification="LEFT" left=" " right=" " trim="false"/>
+                        </format>
+                    </field>
+                </delimFields>
+            </layout>
+        </schemaSourceConfig>
+    </resourceConfig>
+</editableResource>

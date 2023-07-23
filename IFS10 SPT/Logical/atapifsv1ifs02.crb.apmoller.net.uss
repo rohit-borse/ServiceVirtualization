@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1619959153794" createdUser="RBO152"
+    id="-4ce8ac34:1792cf9c893:-7563"
+    selfDescribing="atapifsv1ifs02.crb.apmoller.net"
+    type="parameterized_url_schema" updatedTimestamp="1619959153794"
+    updatedUser="RBO152" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig schemaSourceTemplateName="URL">
+        <schemaSourceConfig name="atapifsv1ifs02.crb.apmoller.net">
+            <url templateName="authorization">
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true"
+                    literal="openid-connect-provider" parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="idp"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true"
+                    literal="authorization" parameterName="" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="code id_token"
+                    parameterName="response_type"
+                    queryName="response_type" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="d0e478474a70933b664b41c25c34e23e"
+                    parameterName="nonce" queryName="nonce" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="78cbbdc30a6188040c965c999760eb56"
+                    parameterName="state" queryName="state" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="66Q74U0isKcIv1CKHpXna9t_HPDLefFp81BdWAlDd-k"
+                    parameterName="code_challenge"
+                    queryName="code_challenge" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="S256"
+                    parameterName="code_challenge_method"
+                    queryName="code_challenge_method" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="861314a1-59d8-4307-a12f-5d6ae352c5cc"
+                    parameterName="client_id" queryName="client_id" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="openid" parameterName="scope"
+                    queryName="scope" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="https://atapifsv1ifs02.crb.apmoller.net:48080/main/default/clientgateway/oauth2/callback"
+                    parameterName="redirect_uri"
+                    queryName="redirect_uri" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="form_post"
+                    parameterName="response_mode"
+                    queryName="response_mode" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="4d9c3c45-9d0a-498c-b9dc-ed0a57158dc1"
+                    parameterName="resource" queryName="resource" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="en-US" parameterName="ui_locales"
+                    queryName="ui_locales" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="select_account" parameterName="prompt"
+                    queryName="prompt" type="7"/>
+            </url>
+            <url templateName="login">
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true"
+                    literal="openid-connect-provider" parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="login"
+                    parameterName="" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="false" isRequired="true"
+                    literalValue="GeUZVjEGGI" parameterName="rf"
+                    queryName="rf" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="false"
+                    literalValue="en-US" parameterName="ui_locales"
+                    queryName="ui_locales" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="false" isRequired="true"
+                    literalValue="select_account" parameterName="prompt"
+                    queryName="prompt" type="7"/>
+            </url>
+        </schemaSourceConfig>
+    </resourceConfig>
+</editableResource>

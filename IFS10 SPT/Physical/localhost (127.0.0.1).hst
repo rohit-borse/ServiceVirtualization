@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1689947543188" createdUser="RBO152"
+    id="-7142cb19:1896e019959:714f"
+    selfDescribing="localhost (127.0.0.1)" type="host_machine_resource"
+    updatedTimestamp="1689947543188" updatedUser="RBO152" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig host_address="127.0.0.1" user_host_name="localhost">
+        <roles>
+            <identity name="ssh" port="22"/>
+        </roles>
+    </resourceConfig>
+</editableResource>

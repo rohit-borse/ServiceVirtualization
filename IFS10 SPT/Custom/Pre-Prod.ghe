@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1689767746334" createdUser="RBO152"
+    id="-7142cb19:1896e019959:-7f66" type="environment_resource"
+    updatedTimestamp="1690105862531" updatedUser="RBO152" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
+        <environmentVariable evdescription="" key="clientgateway" value="admin"/>
+        <environmentVariable evdescription="" key="Host" value="ifspreprod.apmterminals.com"/>
+        <environmentVariable evdescription="" key="httpHeaders/host" value="ifspreprod.apmterminals.com"/>
+        <environmentVariable evdescription=""
+            key="OpenIDConnect/code_challenge" value="Eg17C91lqY7BUKCijicFZW3eBPhUqTQ8JTIGH5z_0uU"/>
+        <environmentVariable evdescription=""
+            key="OpenIDConnect/Code_verifier" value="50e221a4c614502476223fa5f2380c05a0789289312302e23727cdd82694453c"/>
+        <environmentVariable evdescription=""
+            key="OpenIDConnect/redirect_uri" value="https://ifspreprod.apmterminals.com/main/admin/clientgateway/oauth2/callback"/>
+        <environmentVariable evdescription="" key="Port" value="443"/>
+        <environmentVariable evdescription="" key="Proxy/Host" value="10.255.237.20"/>
+        <environmentVariable evdescription="" key="Proxy/Port" value="8887"/>
+        <evbindings>
+            <evbinding evLogicalItemId="-7142cb19:1896e019959:-7ea4" evPhysicalItemId="-7142cb19:1896e019959:-7ebd"/>
+            <evbinding evLogicalItemId="-7142cb19:1896e019959:713f" evPhysicalItemId="-7142cb19:1896e019959:7140"/>
+        </evbindings>
+    </resourceConfig>
+</editableResource>

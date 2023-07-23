@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1616001068076" createdUser="RBO152"
+    id="-4446d856:1783f7fef93:-4fed"
+    selfDescribing="atapifsv1ifs01.crb.apmoller.net"
+    type="parameterized_url_schema" updatedTimestamp="1690098165421"
+    updatedUser="RBO152" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig schemaSourceTemplateName="URL">
+        <schemaSourceConfig basePath="" name="atapifsv1ifs01.crb.apmoller.net">
+            <url templateName="login">
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true"
+                    literal="openid-connect-provider" parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="login"
+                    parameterName="" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="QCEI7hLFab" parameterName="rf"
+                    queryName="rf" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="select_account" parameterName="prompt"
+                    queryName="prompt" type="7"/>
+            </url>
+            <url templateName="authorization">
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true"
+                    literal="openid-connect-provider" parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="idp"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true"
+                    literal="authorization" parameterName="" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="code%20id_token"
+                    parameterName="response_type"
+                    queryName="response_type" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="027c933ecf1050c132bb30f08d48c24b"
+                    parameterName="nonce" queryName="nonce" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="b6e0bb724e37a41c7426631a4e48700b"
+                    parameterName="state" queryName="state" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="Jgtun47m8787ziEqwtlysTxDQ191D_b0Q2n53FjCep4"
+                    parameterName="code_challenge"
+                    queryName="code_challenge" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="S256"
+                    parameterName="code_challenge_method"
+                    queryName="code_challenge_method" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="edef3f1e-3abc-4f21-8bc1-e48534328bb5"
+                    parameterName="client_id" queryName="client_id" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="openid" parameterName="scope"
+                    queryName="scope" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="https%3A%2F%2Fatapifsv1ifs01.crb.apmoller.net%3A48080%2Fmain%2Fdefault%2Fclientgateway%2Foauth2%2Fcallback"
+                    parameterName="redirect_uri"
+                    queryName="redirect_uri" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="form_post"
+                    parameterName="response_mode"
+                    queryName="response_mode" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="d940a0ff-ae18-4f63-a6b9-4e51d5b833c6"
+                    parameterName="resource" queryName="resource" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="en-GB" parameterName="ui_locales"
+                    queryName="ui_locales" type="7"/>
+            </url>
+            <url templateName="login0">
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true"
+                    literal="openid-connect-provider" parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="login"
+                    parameterName="" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="6JkwRV7Zkp" parameterName="rf"
+                    queryName="rf" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="en-GB" parameterName="ui_locales"
+                    queryName="ui_locales" type="7"/>
+                <query defaultValue="" isNameValuePair="true"
+                    isParameterized="true" isRequired="true"
+                    literalValue="select_account" parameterName="prompt"
+                    queryName="prompt" type="7"/>
+            </url>
+        </schemaSourceConfig>
+    </resourceConfig>
+</editableResource>

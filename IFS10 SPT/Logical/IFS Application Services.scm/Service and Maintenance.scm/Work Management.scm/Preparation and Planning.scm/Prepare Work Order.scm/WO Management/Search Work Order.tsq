@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1690110125791" createdUser="RBO152"
+    id="11f7b38d:1898258020f:-76c7" type="test_resource"
+    updatedTimestamp="1690114634572" updatedUser="RBO152" version="1.1">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="11f7b38d:1898258020f:-768b"
+                selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags."
+                type="execute_resource_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig childExits="true" description="Login"
+                    executeparallel="false"
+                    name=" &quot;IFS Application Services/Authentication/PreProdLogin&quot; with password(%%password%%),  username(%%username%%), store results in int-cookie(%%int-cookie%%),  main-cookie(%%main-cookie%%),  password(%%password%%),  username(%%username%%)"
+                    parentWaits="false" subDefault="true"
+                    subIndependent="false" subShared="false">
+                    <executeReference id="-29d32ef2:1897e05511e:-42ae"
+                        lkname="PreProdLogin"
+                        lkpath="IFS Application Services/Authentication/PreProdLogin" type="test_resource"/>
+                    <inbound>
+                        <binding key="password" value="%%password%%"/>
+                        <binding key="username" value="%%username%%"/>
+                    </inbound>
+                    <outbound>
+                        <binding key="int-cookie" value="%%int-cookie%%"/>
+                        <binding key="main-cookie" value="%%main-cookie%%"/>
+                        <binding key="password" value="%%password%%"/>
+                        <binding key="username" value="%%username%%"/>
+                    </outbound>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="772369bf:1898286a8eb:-7508"
+                selfDescribing="Indicate the starting point for a timed section in a performance test.  See manual for details on when timer will be started."
+                type="begin_timed_section_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig
+                    description="NavigateToPrepareWorkOrderScreen"
+                    name="NavigateToPrepareWorkOrderScreen"
+                    sectionName="NavigateToPrepareWorkOrderScreen" statusAtTestEnd="true"/>
+            </editableResource>
+            <editableResource id="11f7b38d:1898258020f:-7555"
+                selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags."
+                type="execute_resource_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig childExits="true"
+                    description="NavigateToPrepareWorkOrderScreen"
+                    executeparallel="false"
+                    name=" &quot;IFS Application Services/Service and Maintenance/Work Management/Preparation and Planning/Prepare Work Order/NavigateToPrepareWorkOrderScreen&quot; with int-cookie(%%int-cookie%%),  main-cookie(%%main-cookie%%)"
+                    parentWaits="false" subDefault="true"
+                    subIndependent="false" subShared="false">
+                    <executeReference id="-7142cb19:1896e019959:-7d2f"
+                        lkname="NavigateToPrepareWorkOrderScreen"
+                        lkpath="IFS Application Services/Service and Maintenance/Work Management/Preparation and Planning/Prepare Work Order/NavigateToPrepareWorkOrderScreen" type="test_resource"/>
+                    <inbound>
+                        <binding key="int-cookie" value="%%int-cookie%%"/>
+                        <binding key="main-cookie" value="%%main-cookie%%"/>
+                    </inbound>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="772369bf:1898286a8eb:-74fd"
+                selfDescribing="End a timer for a user defined section name."
+                type="end_timed_section_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig description=""
+                    name="NavigateToPrepareWorkOrderScreen (2)" sectionID="772369bf:1898286a8eb:-7508"/>
+            </editableResource>
+            <editableResource id="11f7b38d:1898258020f:-72e4"
+                selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags."
+                type="execute_resource_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig childExits="true"
+                    description="SearchWorkOrders"
+                    executeparallel="false"
+                    name=" &quot;IFS Application Services/Service and Maintenance/Work Management/Preparation and Planning/Prepare Work Order/SearchWorkOrders&quot; with int-cookie(%%int-cookie%%),  main-cookie(%%main-cookie%%)"
+                    parentWaits="false" subDefault="true"
+                    subIndependent="false" subShared="false">
+                    <executeReference id="-7142cb19:1896e019959:-7a09"
+                        lkname="SearchWorkOrders"
+                        lkpath="IFS Application Services/Service and Maintenance/Work Management/Preparation and Planning/Prepare Work Order/SearchWorkOrders" type="test_resource"/>
+                    <inbound>
+                        <binding key="int-cookie" value="%%int-cookie%%"/>
+                        <binding key="main-cookie" value="%%main-cookie%%"/>
+                    </inbound>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="NONE">
+            <tag defaultValue="TstUsrAct#01" description="" name="password"/>
+            <tag defaultValue="" description="" name="int-cookie"/>
+            <tag defaultValue="" description="" name="main-cookie"/>
+            <tag defaultValue="TST_USER_05" description="" name="username"/>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

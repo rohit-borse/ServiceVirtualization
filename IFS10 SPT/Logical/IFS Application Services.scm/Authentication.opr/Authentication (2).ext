@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1690114944238" createdUser="RBO152"
+    id="772369bf:1898286a8eb:-6e00" type="excel_test_data"
+    updatedTimestamp="1690114944238" updatedUser="RBO152" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig autoMapColumns="true" hasColumnNamesLine="true"
+        linesBeforeColumnNames="0"
+        location="%%PROJECT/ROOT_DIRECTORY%%/External/TestData/Authentication.xlsx"
+        loop="false" sheetName="" treatEmptyStringAsNull="false"
+        treatTextAsEmpty="false" treatTextAsEmptyValue=""
+        treatTextAsNull="false" treatTextAsNullValue=""/>
+</editableResource>
