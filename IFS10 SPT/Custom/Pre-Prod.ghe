@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1689767746334" createdUser="RBO152"
     id="-7142cb19:1896e019959:-7f66" type="environment_resource"
-    updatedTimestamp="1690105862531" updatedUser="RBO152" version="1.0">
+    updatedTimestamp="1690472260081" updatedUser="RBO152" version="1.0">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
         <environmentVariable evdescription="" key="clientgateway" value="admin"/>
@@ -18,7 +18,6 @@
         <environmentVariable evdescription="" key="Proxy/Port" value="8887"/>
         <evbindings>
             <evbinding evLogicalItemId="-7142cb19:1896e019959:-7ea4" evPhysicalItemId="-7142cb19:1896e019959:-7ebd"/>
-            <evbinding evLogicalItemId="-7142cb19:1896e019959:713f" evPhysicalItemId="-7142cb19:1896e019959:7140"/>
         </evbindings>
     </resourceConfig>
 </editableResource>
