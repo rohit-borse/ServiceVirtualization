@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1690041337628" createdUser="RBO152"
     id="-29d32ef2:1897e05511e:-42ae" type="test_resource"
-    updatedTimestamp="1690115032053" updatedUser="RBO152" version="1.1">
+    updatedTimestamp="1690280790662" updatedUser="RBO152" version="1.1">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
@@ -8964,7 +8964,7 @@
             <tag defaultValue="S256" description="" name="code_challenge_method"/>
             <tag defaultValue="" description="" name="ui_locales"/>
             <tag defaultValue="" description="" name="location"/>
-            <tag defaultValue="TST_USER_01" description="" name="username">
+            <tag defaultValue="TST_USER_05" description="" name="username">
                 <tagProps>
                     <prop key="interfaceInput" value="true"/>
                     <prop key="interfaceOutput" value="true"/>

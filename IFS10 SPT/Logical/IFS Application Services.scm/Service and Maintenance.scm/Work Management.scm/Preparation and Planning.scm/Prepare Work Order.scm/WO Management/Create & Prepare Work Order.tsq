@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1690112355191" createdUser="RBO152"
     id="772369bf:1898286a8eb:-7dee" type="test_resource"
-    updatedTimestamp="1690114454122" updatedUser="RBO152" version="1.1">
+    updatedTimestamp="1690191234642" updatedUser="RBO152" version="1.1">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
-            <editableResource id="772369bf:1898286a8eb:-7556"
-                selfDescribing="Indicate the starting point for a timed section in a performance test.  See manual for details on when timer will be started."
-                type="begin_timed_section_action" version="1.0">
-                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-                <resourceConfig description="Login" name="Login"
-                    sectionName="Login" statusAtTestEnd="true"/>
-            </editableResource>
             <editableResource id="11f7b38d:1898258020f:-768b"
                 selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags."
                 type="execute_resource_action" version="1.0">
@@ -77,12 +70,6 @@
                         <binding key="REPORTED_BY" value="%%username%%"/>
                     </inbound>
                 </resourceConfig>
-            </editableResource>
-            <editableResource id="772369bf:1898286a8eb:-7551"
-                selfDescribing="End a timer for a user defined section name."
-                type="end_timed_section_action" version="1.0">
-                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-                <resourceConfig description="" name="null" sectionID="772369bf:1898286a8eb:-7556"/>
             </editableResource>
         </testTree>
         <tagDataStore inputMode="NONE" outputMode="NONE">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1689877668748" createdUser="RBO152"
     id="-7142cb19:1896e019959:-4110" type="test_resource"
-    updatedTimestamp="1689877668748" updatedUser="RBO152" version="1.1">
+    updatedTimestamp="1690368338754" updatedUser="RBO152" version="1.1">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
@@ -5830,7 +5830,7 @@
                             </fieldAction>
                         </fieldActionGroup>
                         <_c meTy="String" name="Method"
-                            sch="Http Publish" type="7" version="1.2">
+                            sch="Http Publish" type="7" value="POST" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction exp="POST" type="0"/>
@@ -5838,7 +5838,8 @@
                             </fieldActionGroup>
                         </_c>
                         <_c meTy="String" name="URL" sch="Http Publish"
-                            type="7" version="1.2">
+                            type="7"
+                            value="/main/default/clientgateway/ObjectConnectionServices/GetCountAttachments" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -5857,7 +5858,7 @@
                                 </fieldAction>
                             </fieldActionGroup>
                             <_c meTy="String" name="Version"
-                                sch="Http Publish" type="7" version="1.2">
+                                sch="Http Publish" type="7" value="1.1" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="1.1" type="0"/>
@@ -5875,7 +5876,8 @@
                                     </fieldAction>
                                 </fieldActionGroup>
                                 <_c meTy="String" name="User-Agent"
-                                    sch="Http Publish" type="7" version="1.2">
+                                    sch="Http Publish" type="7"
+                                    value="IFS .NET Access Provider/1.2" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -5884,7 +5886,8 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="Os-User"
-                                    sch="Http Publish" type="7" version="1.2">
+                                    sch="Http Publish" type="7"
+                                    value="CRB\RBO152" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -5893,7 +5896,8 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="Program"
-                                    sch="Http Publish" type="7" version="1.2">
+                                    sch="Http Publish" type="7"
+                                    value="Ifs.Fnd.Explorer.exe" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -5902,7 +5906,8 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="Machine"
-                                    sch="Http Publish" type="7" version="1.2">
+                                    sch="Http Publish" type="7"
+                                    value="rdp-tcp#1@scrbtstdk003623.crb.apmoller.net" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -5912,7 +5917,8 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="X-Ifs-Capabilities"
-                                    sch="Http Publish" type="7" version="1.2">
+                                    sch="Http Publish" type="7"
+                                    value="02" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="02" type="0"/>
@@ -5920,7 +5926,8 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="Content-Type"
-                                    sch="Http Publish" type="7" version="1.2">
+                                    sch="Http Publish" type="7"
+                                    value="application/octet-stream" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -5930,7 +5937,8 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="Request-Header-Length"
-                                    sch="Http Publish" type="7" version="1.2">
+                                    sch="Http Publish" type="7"
+                                    value="171" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="171" type="0"/>
@@ -5938,7 +5946,8 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="Accept-Encoding"
-                                    sch="Http Publish" type="7" version="1.2">
+                                    sch="Http Publish" type="7"
+                                    value="gzip" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="gzip" type="0"/>
@@ -5946,7 +5955,8 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="Host"
-                                    sch="Http Publish" type="7" version="1.2">
+                                    sch="Http Publish" type="7"
+                                    value="ifspreprod.apmterminals.com" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -5955,7 +5965,8 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="Cookie"
-                                    sch="Http Publish" type="7" version="1.2">
+                                    sch="Http Publish" type="7"
+                                    value="JSESSIONID=FZZ0b5BmxHw7QKAUWMZGh--Ifj0SBxivjKqs8ywiiNDUQSnxVU3p!-2145352593; _WL_AUTHCOOKIE_JSESSIONID=6eh2HbZEUuMqd7o.1WC4; ApplicationGatewayAffinityCORS=f04eebedc2c75ab37d6a13a859ff5a6d; ApplicationGatewayAffinity=f04eebedc2c75ab37d6a13a859ff5a6d" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -5964,7 +5975,8 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="Content-Length"
-                                    sch="Http Publish" type="7" version="1.2">
+                                    sch="Http Publish" type="7"
+                                    value="685" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="685" type="0"/>
@@ -5972,9 +5984,18 @@
                                     </fieldActionGroup>
                                 </_c>
                             </_c>
+                            <_c meTy="Boolean" name="followRedirects"
+                                sch="Http Publish" type="8" value="true" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="true" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
                         </_c>
                         <_c meTy="String" name="MessageType"
-                            sch="Http Publish" type="7" version="1.2">
+                            sch="Http Publish" type="7"
+                            value="http.byte.array.message.type" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -6521,7 +6542,708 @@
                     </bodyMessage>
                 </resourceConfig>
             </editableResource>
+            <editableResource id="-130026fa:18990f4b3a7:-7760"
+                selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly."
+                type="send_request_action" version="1.1">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="on resource &quot;/main/default/clientgateway/ObjectConnectionServices/GetCountAttachments&quot; using schema &quot;Bytes&quot; via &quot;IFSApplicationServer&quot; (2)" transport="-7142cb19:1896e019959:-7ea4">
+                    <headerMessage assocdefid="Http Publish"
+                        meTy="Message" name="" sch="Http Publish"
+                        type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="Method"
+                            sch="Http Publish" type="7" value="POST" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction exp="POST" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="URL" sch="Http Publish"
+                            type="7"
+                            value="/main/default/clientgateway/ObjectConnectionServices/GetCountAttachments" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction
+                                    exp="/main/default/clientgateway/ObjectConnectionServices/GetCountAttachments" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Message" name="httpDetails"
+                            sch="Http Publish" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c meTy="String" name="Version"
+                                sch="Http Publish" type="7" value="1.1" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="1.1" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                            <_c meTy="Message" name="httpHeaders"
+                                sch="Http Publish" type="12" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                                <_c meTy="String" name="User-Agent"
+                                    sch="Http Publish" type="7"
+                                    value="IFS .NET Access Provider/1.2" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="IFS .NET Access Provider/1.2" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Os-User"
+                                    sch="Http Publish" type="7"
+                                    value="CRB\RBO152" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="CRB\RBO152" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Program"
+                                    sch="Http Publish" type="7"
+                                    value="Ifs.Fnd.Explorer.exe" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="Ifs.Fnd.Explorer.exe" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Machine"
+                                    sch="Http Publish" type="7"
+                                    value="rdp-tcp#1@scrbtstdk003623.crb.apmoller.net" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="rdp-tcp#1@scrbtstdk003623.crb.apmoller.net" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String"
+                                    name="X-Ifs-Capabilities"
+                                    sch="Http Publish" type="7"
+                                    value="02" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="02" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Content-Type"
+                                    sch="Http Publish" type="7"
+                                    value="application/octet-stream" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="application/octet-stream" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String"
+                                    name="Request-Header-Length"
+                                    sch="Http Publish" type="7"
+                                    value="171" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="171" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Accept-Encoding"
+                                    sch="Http Publish" type="7"
+                                    value="gzip" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="gzip" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Host"
+                                    sch="Http Publish" type="7"
+                                    value="ifspreprod.apmterminals.com" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="ifspreprod.apmterminals.com" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Cookie"
+                                    sch="Http Publish" type="7"
+                                    value="JSESSIONID=FZZ0b5BmxHw7QKAUWMZGh--Ifj0SBxivjKqs8ywiiNDUQSnxVU3p!-2145352593; _WL_AUTHCOOKIE_JSESSIONID=6eh2HbZEUuMqd7o.1WC4; ApplicationGatewayAffinityCORS=f04eebedc2c75ab37d6a13a859ff5a6d; ApplicationGatewayAffinity=f04eebedc2c75ab37d6a13a859ff5a6d" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="JSESSIONID=FZZ0b5BmxHw7QKAUWMZGh--Ifj0SBxivjKqs8ywiiNDUQSnxVU3p!-2145352593; _WL_AUTHCOOKIE_JSESSIONID=6eh2HbZEUuMqd7o.1WC4; ApplicationGatewayAffinityCORS=f04eebedc2c75ab37d6a13a859ff5a6d; ApplicationGatewayAffinity=f04eebedc2c75ab37d6a13a859ff5a6d" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Content-Length"
+                                    sch="Http Publish" type="7"
+                                    value="685" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="685" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                            </_c>
+                            <_c meTy="Boolean" name="followRedirects"
+                                sch="Http Publish" type="8" value="true" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="true" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                        </_c>
+                        <_c meTy="String" name="MessageType"
+                            sch="Http Publish" type="7"
+                            value="http.byte.array.message.type" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction
+                                    exp="http.byte.array.message.type" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </headerMessage>
+                    <bodyMessage assocdefid="RawByteArray" sch="Bytes"
+                        type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c name="data" sch="Bytes" type="14"
+                            value="1B18464E445F434F4E544558541B18434C49454E545F49441553435242545354444B3030333632332D5749412D5244502D54435023312D3939353618524551554553545F49441537373636383366352D636534312D346138632D626163372D363638383534333961363764184C4F43414C4515656E2D555318454E434F44455F42494E4152595F56414C55451546414C534518494E5445524143544956455F4D4F44451546414C53451A1A1B184F424A454354434F4E4E454354494F4E53455256494345535F474554434F554E544154544143484D454E54535F504152414D45544552531B1844415441174F424A454354434F4E4E454354494F4E53455256494345535F474554434F554E544154544143484D454E54535F504152414D4554455253164372656174650E63336130363137632D376330632D343465312D383664312D6663343266396466616235301B18534552564943455F434F554E54531741525241591B1844415441174F626A656374436F6E6E656374696F6E732E53657276696365436F756E7473164372656174650E36373263363031652D313139652D343633632D383663622D6239366164666666356365341B18534552564943455F4E414D45174C5054162A1512446F635265666572656E63654F626A656374184849545F434F554E541749162A1530184C555F4E414D45174C5054162A15064A745461736B18534552564943455F564945575F4E414D45174C5054162A141A1A184B45595F5245465F41525241591741525241591B1844415441174F626A656374436F6E6E656374696F6E732E4B65795265666572656E636573164372656174650E61623136663862372D633062622D343766372D393735382D3161383961306365313263391B184B45595F56414C5545174C5054162A15105441534B5F5345513D3131313635305E1A1A1A1A1A" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction
+                                    exp="1B18464E445F434F4E544558541B18434C49454E545F49441553435242545354444B3030333632332D5749412D5244502D54435023312D3939353618524551554553545F49441537373636383366352D636534312D346138632D626163372D363638383534333961363764184C4F43414C4515656E2D555318454E434F44455F42494E4152595F56414C55451546414C534518494E5445524143544956455F4D4F44451546414C53451A1A1B184F424A454354434F4E4E454354494F4E53455256494345535F474554434F554E544154544143484D454E54535F504152414D45544552531B1844415441174F424A454354434F4E4E454354494F4E53455256494345535F474554434F554E544154544143484D454E54535F504152414D4554455253164372656174650E63336130363137632D376330632D343465312D383664312D6663343266396466616235301B18534552564943455F434F554E54531741525241591B1844415441174F626A656374436F6E6E656374696F6E732E53657276696365436F756E7473164372656174650E36373263363031652D313139652D343633632D383663622D6239366164666666356365341B18534552564943455F4E414D45174C5054162A1512446F635265666572656E63654F626A656374184849545F434F554E541749162A1530184C555F4E414D45174C5054162A15064A745461736B18534552564943455F564945575F4E414D45174C5054162A141A1A184B45595F5245465F41525241591741525241591B1844415441174F626A656374436F6E6E656374696F6E732E4B65795265666572656E636573164372656174650E61623136663862372D633062622D343766372D393735382D3161383961306365313263391B184B45595F56414C5545174C5054162A15105441534B5F5345513D3131313635305E1A1A1A1A1A" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="-130026fa:18990f4b3a7:-775f"
+                selfDescribing="Receive and validate a response to the request you have sent."
+                type="receive_reply_action" version="1.1">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="using schema &quot;Bytes&quot; (10)"
+                    sendRequestID="-130026fa:18990f4b3a7:-7760" transport="-7142cb19:1896e019959:-7ea4">
+                    <headerMessage assocdefid="Http Receive Reply"
+                        meTy="Message" name="" sch="Http Receive Reply"
+                        type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="StatusCode"
+                            sch="Http Receive Reply" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="200" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <filterActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="200" type="0"/>
+                                </fieldAction>
+                            </filterActionGroup>
+                        </_c>
+                        <_c meTy="String" name="ReasonPhrase"
+                            sch="Http Receive Reply" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="OK" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <filterActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="OK" type="0"/>
+                                </fieldAction>
+                            </filterActionGroup>
+                        </_c>
+                        <_c meTy="Message" name="httpDetails"
+                            sch="Http Receive Reply" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c meTy="String" name="Version"
+                                sch="Http Receive Reply" type="7" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="1.1" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                                <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="1.1" type="0"/>
+                                    </fieldAction>
+                                </filterActionGroup>
+                            </_c>
+                            <_c meTy="Message" name="httpHeaders"
+                                sch="Http Receive Reply" type="12" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                                <_c meTy="String" name="content-type"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="application/octet-stream" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="application/octet-stream" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String" name="content-length"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="390" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="390" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String" name="x-frame-options"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="SAMEORIGIN" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="SAMEORIGIN" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String"
+                                    name="x-content-type-options"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="nosniff" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="nosniff" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String" name="referrer-policy"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="same-origin" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="same-origin" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String"
+                                    name="response-header-length"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="274" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="274" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String"
+                                    name="x-ifs-capabilities"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="02" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="02" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String"
+                                    name="content-encoding"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="gzip" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="gzip" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String" name="requested-url"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="https://ifspreprod.apmterminals.com:443/main/default/clientgateway/ObjectConnectionServices/GetCountAttachments" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="https://ifspreprod.apmterminals.com:443/main/default/clientgateway/ObjectConnectionServices/GetCountAttachments" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String"
+                                    name="x-oracle-dms-rid"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="0:1" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="0:1" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String"
+                                    name="x-oracle-dms-ecid"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="0060Ex2q81cADSKpySG7yW0007m_0006sr" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="0060Ex2q81cADSKpySG7yW0007m_0006sr" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String"
+                                    name="x-opnet-transaction-trace"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="a2_ce96d3e2-afaf-43af-bc11-f0ca4394fc52" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="a2_ce96d3e2-afaf-43af-bc11-f0ca4394fc52" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String"
+                                    name="x-xss-protection"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="1; mode=block" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="1; mode=block" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String" name="cache-control"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="max-age=0" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="max-age=0" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String" name="expires"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="Thu, 20 Jul 2023 18:24:39 GMT" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="Thu, 20 Jul 2023 18:24:39 GMT" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String" name="date"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="Thu, 20 Jul 2023 18:24:39 GMT" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="Thu, 20 Jul 2023 18:24:39 GMT" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String" name="connection"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="keep-alive" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="keep-alive" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String" name="vary"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="Accept-Encoding" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="Accept-Encoding" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                                <_c meTy="String"
+                                    name="strict-transport-security"
+                                    sch="Http Receive Reply" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="max-age=15768000 ; includeSubDomains" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="max-age=15768000 ; includeSubDomains" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                </_c>
+                            </_c>
+                            <_c meTy="Boolean" name="followRedirects"
+                                optional="true" sch="Http Receive Reply"
+                                type="8" version="1.2"/>
+                        </_c>
+                        <_c meTy="String" name="MessageType"
+                            sch="Http Receive Reply" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="http.byte.array.message.type" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <filterActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="http.byte.array.message.type" type="0"/>
+                                </fieldAction>
+                            </filterActionGroup>
+                        </_c>
+                        <_c meTy="Date-Time" name="rcvdTimestamp"
+                            sch="Http Receive Reply" type="11" version="1.2"/>
+                    </headerMessage>
+                    <subconfig
+                        MessageType="http.byte.array.message.type"
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                    <bodyMessage assocdefid="RawByteArray" sch="Bytes"
+                        type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="1">
+                                <fieldAction anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c coreTypeInt="14" coreTypeName="ByteArray"
+                            name="data"
+                            nodeFormatter="byte_array_encoding_node_formatter"
+                            sch="Bytes" type="12" version="1.2">
+                            <fieldExpander
+                                fieldExpanderID="byte_array_encoding_fieldexpander"
+                                fieldSchema="ByteArrayInline" fieldSchemaRoot="ByteArray">
+                                <property name="XML.nullvalues" value="false"/>
+                                <property name="XML.normalise" value="true"/>
+                                <property name="byte_array_eol_pref" value="LF"/>
+                                <property name="XML.declaration" value="true"/>
+                                <property name="XML.encoding" value="UTF-8"/>
+                                <property name="XML.xmlFormat" value="Single line"/>
+                                <property name="XML.cdata" value="false"/>
+                                <property name="XML.space" value="false"/>
+                                <property
+                                    name="byte_array_encoding_property" value="ISO-8859-1"/>
+                            </fieldExpander>
+                            <contentTree>1B18535441545553174C505416511504444F4E4518464E445F434F4E544558541B18434C49454E545F49441553435242545354444B3030333632332D5749412D5244502D54435023312D3939353618524551554553545F49441537373636383366352D636534312D346138632D626163372D363638383534333961363764184C4F43414C45162A15656E2D555318454E434F44455F42494E4152595F56414C55451546414C534518494E5445524143544956455F4D4F44451546414C5345184C414E4755414745174C5054162A1502656E18454E4352595054494F4E5F454E41424C4544174C5054162A150546414C5345184F5045524154494F4E174C5054162A141A184150505F434F4E544558541B1A1A1B184F424A454354434F4E4E454354494F4E53455256494345535F474554434F554E544154544143484D454E54531B1844415441174F424A454354434F4E4E454354494F4E53455256494345532E4F424A454354434F4E4E454354494F4E53455256494345535F474554434F554E544154544143484D454E5453164372656174651B18534552564943455F434F554E5453174152524159162A1B1844415441174F424A454354434F4E4E454354494F4E532E534552564943455F434F554E5453164372656174650E36373263363031652D313139652D343633632D383663622D6239366164666666356365341B18534552564943455F4E414D45174C5054162A1512446F635265666572656E63654F626A656374184849545F434F554E541749162A1530184C555F4E414D45174C5054162A15064A745461736B18534552564943455F564945575F4E414D45174C5054162A141A1A1A1A1A<defaultActions>
+                                    <defaultMessageActions>
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction type="0"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultScalarActions>
+                                </defaultActions>
+                                <updates>
+                                    <updateField path="/data/{}">
+                                    <_c assocdefid="ByteArray"/>
+                                    </updateField>
+                                </updates>
+                            </contentTree>
+                            <fieldActionGroup>
+                                <fieldAction type="1">
+                                    <fieldAction type="7"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
         </testTree>
-        <tagDataStore inputMode="NONE" outputMode="NONE"/>
+        <tagDataStore inputMode="NONE" outputMode="NONE">
+            <tag defaultValue="" description="" name="clientgateway">
+                <tagProps>
+                    <prop key="overrideEnvironment" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="" description="" name="RequestSentTimestamp"/>
+            <tag defaultValue="" description="" name="ResponseData"/>
+            <tag defaultValue="" description="" name="ResponseReceivedTimestamp"/>
+            <tag defaultValue="" description="" name="main-cookie"/>
+            <tag defaultValue="" description="" name="HttpResponseStatusCode"/>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
     </resourceConfig>
 </editableResource>

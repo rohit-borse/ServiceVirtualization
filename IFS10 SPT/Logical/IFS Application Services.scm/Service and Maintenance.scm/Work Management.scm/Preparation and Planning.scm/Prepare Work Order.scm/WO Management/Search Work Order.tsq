@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1690110125791" createdUser="RBO152"
     id="11f7b38d:1898258020f:-76c7" type="test_resource"
-    updatedTimestamp="1690114634572" updatedUser="RBO152" version="1.1">
+    updatedTimestamp="1690191234649" updatedUser="RBO152" version="1.1">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
@@ -29,15 +29,6 @@
                     </outbound>
                 </resourceConfig>
             </editableResource>
-            <editableResource id="772369bf:1898286a8eb:-7508"
-                selfDescribing="Indicate the starting point for a timed section in a performance test.  See manual for details on when timer will be started."
-                type="begin_timed_section_action" version="1.0">
-                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-                <resourceConfig
-                    description="NavigateToPrepareWorkOrderScreen"
-                    name="NavigateToPrepareWorkOrderScreen"
-                    sectionName="NavigateToPrepareWorkOrderScreen" statusAtTestEnd="true"/>
-            </editableResource>
             <editableResource id="11f7b38d:1898258020f:-7555"
                 selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags."
                 type="execute_resource_action" version="1.0">
@@ -56,13 +47,6 @@
                         <binding key="main-cookie" value="%%main-cookie%%"/>
                     </inbound>
                 </resourceConfig>
-            </editableResource>
-            <editableResource id="772369bf:1898286a8eb:-74fd"
-                selfDescribing="End a timer for a user defined section name."
-                type="end_timed_section_action" version="1.0">
-                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-                <resourceConfig description=""
-                    name="NavigateToPrepareWorkOrderScreen (2)" sectionID="772369bf:1898286a8eb:-7508"/>
             </editableResource>
             <editableResource id="11f7b38d:1898258020f:-72e4"
                 selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags."
