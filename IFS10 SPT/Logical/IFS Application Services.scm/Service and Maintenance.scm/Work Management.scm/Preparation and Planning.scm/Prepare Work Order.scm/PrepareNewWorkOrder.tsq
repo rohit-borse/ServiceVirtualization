@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1690196855128" createdUser="RBO152"
     id="-130026fa:18983c81cd6:-397d" type="test_resource"
-    updatedTimestamp="1690472077920" updatedUser="RBO152" version="1.1">
+    updatedTimestamp="1690482613242" updatedUser="RBO152" version="1.1">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
@@ -332,7 +332,7 @@
                 type="receive_reply_action" version="1.1">
                 <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
                 <resourceConfig description="" formatter="HTTP_Message"
-                    name="using schema &quot;Bytes&quot;"
+                    name="using schema &quot;Bytes&quot; (12)"
                     sendRequestID="-130026fa:18983c81cd6:-3c29" transport="-7142cb19:1896e019959:-7ea4">
                     <headerMessage assocdefid="Http Receive Reply"
                         meTy="Message" name="" sch="Http Receive Reply"
@@ -349,6 +349,11 @@
                             <fieldActionGroup>
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
+                                </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
                                 </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
@@ -722,14 +727,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -1134,6 +1144,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -1506,14 +1521,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -1854,6 +1874,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -2226,14 +2251,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -2638,6 +2668,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -3010,14 +3045,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -3430,6 +3470,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -3802,14 +3847,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -4150,6 +4200,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -4522,14 +4577,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -4942,6 +5002,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -5314,14 +5379,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -5726,6 +5796,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -6098,14 +6173,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -6518,6 +6598,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -6890,14 +6975,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -7310,6 +7400,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -7682,14 +7777,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -8029,6 +8129,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -8401,14 +8506,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -9773,6 +9883,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -10145,14 +10260,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -10558,6 +10678,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -10930,14 +11055,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -11342,6 +11472,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -11714,14 +11849,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -12126,6 +12266,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -12498,14 +12643,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -12910,6 +13060,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -13282,14 +13437,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -13694,6 +13854,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -14066,14 +14231,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -14478,6 +14648,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -14850,14 +15025,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -15262,6 +15442,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -15634,14 +15819,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -16046,6 +16236,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -16418,14 +16613,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -16830,6 +17030,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -17202,14 +17407,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -17614,6 +17824,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -17986,14 +18201,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -18399,6 +18619,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -18771,14 +18996,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -19227,6 +19457,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -19599,14 +19834,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -20012,6 +20252,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -20384,14 +20629,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -20787,6 +21037,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -21159,14 +21414,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -21534,7 +21794,7 @@
                 type="receive_reply_action" version="1.1">
                 <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
                 <resourceConfig description="" formatter="HTTP_Message"
-                    name="using schema &quot;Bytes&quot; (28)"
+                    name="using schema &quot;Bytes&quot; (24)"
                     sendRequestID="-130026fa:18983c81cd6:-3b6a" transport="-7142cb19:1896e019959:-7ea4">
                     <headerMessage assocdefid="Http Receive Reply"
                         meTy="Message" name="" sch="Http Receive Reply"
@@ -21551,6 +21811,11 @@
                             <fieldActionGroup>
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
+                                </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
                                 </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
@@ -21924,14 +22189,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -22016,9 +22286,22 @@
                 </resourceConfig>
             </editableResource>
         </testTree>
-        <tagDataStore inputMode="NONE" outputMode="NONE">
+        <tagDataStore inputMode="SELECT" outputMode="NONE">
             <tag defaultValue="" description="" name="WO_OBJKEY"/>
+            <tag defaultValue="" description="" name="StatusCode"/>
+            <tag defaultValue="" description="" name="TEST_SUITE_NAME">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
             <tag defaultValue="" description="" name="hex-SITE"/>
+            <tag defaultValue="" description="" name="TEST_CASE_NAME">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
             <tag defaultValue="" description="" name="RequestSentTimestamp"/>
             <tag defaultValue="" description="" name="ResponseData"/>
             <tag defaultValue="" description="" name="CURSOR_ID"/>
@@ -22028,7 +22311,14 @@
                 defaultValue="ApplicationGatewayAffinityCORS=c0f8bfb0f4d4da62d6e942d80216588a; ApplicationGatewayAffinity=c0f8bfb0f4d4da62d6e942d80216588a; JSESSIONID=27aIJFA4oti97SEY8nKopixhyI4Vqqn3ZL5ZJ6VyDqrQSRj4Qk3O!1060605782; _WL_AUTHCOOKIE_JSESSIONID=nSLtdxSs6flYBSWITkzs"
                 description="" name="main-cookie"/>
             <tag defaultValue="" description="" name="hex-COMPANY"/>
+            <tag defaultValue="" description="" name="rcvdTimestamp"/>
             <tag defaultValue="AAR" description="" name="SITE"/>
+            <tag defaultValue="" description="" name="TEST_EXECUTION_ID">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
             <tag defaultValue="" description="" name="WO_NO"/>
             <tag defaultValue="" description="" name="hexbytearray-SITE"/>
             <tag defaultValue="" description="" name="TRANSACTION_ID"/>

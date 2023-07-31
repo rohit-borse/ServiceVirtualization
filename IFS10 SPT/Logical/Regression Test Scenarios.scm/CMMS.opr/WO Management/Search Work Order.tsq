@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1690472348984" createdUser="RBO152"
     id="-480fc412:18997eec8c9:-758b" type="test_resource"
-    updatedTimestamp="1690472348984" updatedUser="RBO152" version="1.1">
+    updatedTimestamp="1690796887251" updatedUser="RBO152" version="1.1">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
@@ -11,15 +11,17 @@
                 <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
                 <resourceConfig childExits="true" description="Login"
                     executeparallel="false"
-                    name=" &quot;IFS Application Services/Authentication/PreProdLogin&quot; with password(%%password%%),  username(%%username%%), store results in int-cookie(%%int-cookie%%),  main-cookie(%%main-cookie%%),  password(%%password%%),  username(%%username%%)"
+                    name=" &quot;IFS Application Services/Authentication/Login&quot; with password(%%password%%),  username(%%username%%),  int-cookie(%%int-cookie%%),  main-cookie(%%main-cookie%%), store results in int-cookie(%%int-cookie%%),  main-cookie(%%main-cookie%%),  password(%%password%%),  username(%%username%%)"
                     parentWaits="false" subDefault="true"
                     subIndependent="false" subShared="false">
                     <executeReference id="-29d32ef2:1897e05511e:-42ae"
-                        lkname="PreProdLogin"
-                        lkpath="IFS Application Services/Authentication/PreProdLogin" type="test_resource"/>
+                        lkname="Login"
+                        lkpath="IFS Application Services/Authentication/Login" type="test_resource"/>
                     <inbound>
                         <binding key="password" value="%%password%%"/>
                         <binding key="username" value="%%username%%"/>
+                        <binding key="int-cookie" value="%%int-cookie%%"/>
+                        <binding key="main-cookie" value="%%main-cookie%%"/>
                     </inbound>
                     <outbound>
                         <binding key="int-cookie" value="%%int-cookie%%"/>
@@ -68,11 +70,21 @@
                 </resourceConfig>
             </editableResource>
         </testTree>
-        <tagDataStore inputMode="NONE" outputMode="NONE">
-            <tag defaultValue="TstUsrAct#01" description="" name="password"/>
+        <tagDataStore inputMode="SELECT" outputMode="NONE">
+            <tag defaultValue="TstUsrAct#01" description="" name="password">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
             <tag defaultValue="" description="" name="int-cookie"/>
             <tag defaultValue="" description="" name="main-cookie"/>
-            <tag defaultValue="TST_USER_05" description="" name="username"/>
+            <tag defaultValue="TST_USER_05" description="" name="username">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
         </tagDataStore>
         <testprops messageClearance="false"/>
     </resourceConfig>

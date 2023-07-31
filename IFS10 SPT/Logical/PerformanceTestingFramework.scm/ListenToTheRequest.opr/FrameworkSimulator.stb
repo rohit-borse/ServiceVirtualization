@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1690643422252" createdUser="RBO152"
+    id="24289fbb:18998672e23:-3bb7" type="stub_resource"
+    updatedTimestamp="1690643442138" updatedUser="RBO152" version="1.1">
+    <loggingConfiguration debug="true" writeStubEventsToDB="true"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="24289fbb:18998672e23:-3bb5"
+                selfDescribing="Configure a subscriber to pick up a message that can be passed to the child Case Actions"
+                type="message_switch_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="on resource &quot;/IFS/PerfRequest&quot; via &quot;StubServer&quot;"
+                    src="24289fbb:18998672e23:-3c64" transport="24289fbb:18998672e23:-3c5d">
+                    <settings MessageType="http.text.message.type"
+                        Method="POST" URL="/IFS/PerfRequest"
+                        _version="1.1" allowSubPath="true"
+                        consumerType="Participate" filterHeaders="false"
+                        filterMethod="false" filterResourcePath="true"/>
+                    <passThrough behaviour="DELAY"
+                        componentId="24289fbb:18998672e23:-3c64"
+                        componentType="OPERATION" templateType="http_transport">
+                        <DELAY delayPeriod="0"/>
+                    </passThrough>
+                    <cases>
+                        <editableResource
+                            id="24289fbb:18998672e23:-3baf"
+                            selfDescribing="Configure the filtering and validation for this Case action"
+                            type="message_case_action" version="1.0">
+                            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                            <resourceConfig description="" name="&quot;Text&quot; using schema &quot;Text&quot;">
+                                <FilterExpressions option="NOTHING" type="script:ECMAScript"/>
+                                <bodyfilters assocdefid="Text"
+                                    name="Text" sch="Text" type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c name="text" sch="Text" type="7" version="1.2"/>
+                                </bodyfilters>
+                                <headerfilters
+                                    assocdefid="Http Subscribe"
+                                    meTy="Message" name=""
+                                    sch="Http Subscribe" type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c meTy="String" name="Method"
+                                    sch="Http Subscribe" type="7" version="1.2"/>
+                                    <_c meTy="String" name="URL"
+                                    sch="Http Subscribe" type="7" version="1.2"/>
+                                    <_c meTy="Message"
+                                    name="httpDetails"
+                                    sch="Http Subscribe" type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c meTy="String" name="Version"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2"/>
+                                    <_c meTy="Message"
+                                    name="httpHeaders"
+                                    sch="Http Subscribe"
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c meTy="String"
+                                    name="Accept"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2"/>
+                                    <_c meTy="String"
+                                    name="Referer"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2"/>
+                                    <_c meTy="String"
+                                    name="Accept-Language"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2"/>
+                                    <_c meTy="String"
+                                    name="Accept-Encoding"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2"/>
+                                    <_c meTy="String"
+                                    name="If-Modified-Since"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2"/>
+                                    <_c meTy="String"
+                                    name="If-None-Match"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2"/>
+                                    <_c meTy="String"
+                                    name="User-Agent"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2"/>
+                                    <_c meTy="String"
+                                    name="Content-Type"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2"/>
+                                    <_c meTy="String"
+                                    name="SOAPAction"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2"/>
+                                    <_c meTy="String"
+                                    name="Host"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2"/>
+                                    <_c meTy="String"
+                                    name="Connection"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2"/>
+                                    <_c meTy="String"
+                                    name="Cookie"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2"/>
+                                    </_c>
+                                    <_c meTy="Boolean"
+                                    name="followRedirects"
+                                    optional="true"
+                                    sch="Http Subscribe"
+                                    type="8" version="1.2"/>
+                                    </_c>
+                                    <_c meTy="String" name="MessageType"
+                                    sch="Http Subscribe" type="7" version="1.2"/>
+                                    <_c meTy="Date-Time"
+                                    name="rcvdTimestamp"
+                                    sch="Http Subscribe" type="11" version="1.2"/>
+                                </headerfilters>
+                                <childActions>
+                                    <editableResource
+                                    id="24289fbb:18998672e23:-3b36"
+                                    selfDescribing="Choose evaluation expressions to determine test execution flow.  Use predefined functions, custom plug-ins and tagged data."
+                                    type="decision_action" version="1.0">
+                                    <loggingConfiguration
+                                    debug="false" writeStubEventsToDB="false"/>
+                                    <resourceConfig description=""
+                                    name="-NO SCRIPT DEFINED-"
+                                    option="NOTHING" type="script:ECMAScript">
+                                    <true
+                                    id="24289fbb:18998672e23:-3b35"
+                                    selfDescribing="True"
+                                    type="decision_path_action" version="1.0">
+                                    <loggingConfiguration
+                                    debug="false" writeStubEventsToDB="false"/>
+                                    <resourceConfig
+                                    description=""
+                                    name="" path="0"/>
+                                    </true>
+                                    <false
+                                    id="24289fbb:18998672e23:-3b34"
+                                    selfDescribing="False"
+                                    type="decision_path_action" version="1.0">
+                                    <loggingConfiguration
+                                    debug="false" writeStubEventsToDB="false"/>
+                                    <resourceConfig
+                                    description=""
+                                    name="" path="1"/>
+                                    </false>
+                                    </resourceConfig>
+                                    </editableResource>
+                                    <editableResource
+                                    id="24289fbb:18998672e23:-3bae"
+                                    selfDescribing="Respond to a previously received request message.  Select the relevant request from the drop-down and edit the content of the message to send."
+                                    type="send_reply_action" version="1.0">
+                                    <loggingConfiguration
+                                    debug="false" writeStubEventsToDB="false"/>
+                                    <resourceConfig description=""
+                                    formatter="HTTP_Message"
+                                    name="&quot;Text&quot; using schema &quot;Text&quot; (2)"
+                                    receiverequestid="24289fbb:18998672e23:-3bb5" src="24289fbb:18998672e23:-3bb5">
+                                    <replyHeaderMessage
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c name="MessageType"
+                                    type="7"
+                                    value="http.text.message.type" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="http.text.message.type" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c meTy="String"
+                                    name="StatusCode"
+                                    type="7" value="200" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="200" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c meTy="String"
+                                    name="ReasonPhrase"
+                                    type="7" value="OK" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="OK" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c meTy="Message"
+                                    name="httpDetails"
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c meTy="String"
+                                    name="Version"
+                                    type="7"
+                                    value="1.0" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+
+                                    <fieldAction
+                                    exp="1.0" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c meTy="Message"
+                                    name="httpHeaders"
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    </_c>
+                                    </replyHeaderMessage>
+                                    <replyMessage
+                                    assocdefid="Text"
+                                    name="Text" sch="Text"
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c name="text"
+                                    sch="Text" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    </replyMessage>
+                                    </resourceConfig>
+                                    </editableResource>
+                                </childActions>
+                            </resourceConfig>
+                        </editableResource>
+                        <editableResource
+                            id="24289fbb:18998672e23:-3bb4"
+                            type="default_case_action" version="1.0">
+                            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                            <resourceConfig description="" name=" (2)"/>
+                        </editableResource>
+                    </cases>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore identifier="24289fbb:18998672e23:-3b5b"
+            inputMode="NONE" outputMode="NONE"/>
+        <testprops messageClearance="false"/>
+        <stubprops behaviourStyle="ONE_TO_ONE" majorVersion="1"
+            messageClearance="false" minorVersion="0" optimise="false" wrks="10">
+            <responseTimeTable>
+                <entry key="24289fbb:18998672e23:-3c64">
+                    <value type="NO_DELAY"/>
+                </entry>
+            </responseTimeTable>
+            <environmentTasks preventExecutionOnFailure="false"/>
+        </stubprops>
+        <Session mode="NONE"/>
+    </resourceConfig>
+</editableResource>

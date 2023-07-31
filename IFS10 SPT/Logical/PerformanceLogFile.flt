@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1690642409820" createdUser="RBO152"
+    id="24289fbb:18998672e23:-3f40"
+    selfDescribing="A File located somewhere"
+    type="file_contents_transport" updatedTimestamp="1690642453331"
+    updatedUser="RBO152" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="" transportTemplateName="File">
+        <_c directory="%%PROJECT/ROOT_DIRECTORY%%/External/Logs/"
+            encoding="UTF-8" fileNamePattern=""
+            ignoreLastModification="false" lastModificationDelay="0"
+            newLineChoice="Native" packetiserType="AllAvailableBytes" writeEnabled="false"/>
+    </resourceConfig>
+</editableResource>

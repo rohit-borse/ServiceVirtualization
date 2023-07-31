@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1690789975243" createdUser="RBO152"
+    id="24289fbb:18998672e23:-2bf" type="db_test_data"
+    updatedTimestamp="1690789993493" updatedUser="RBO152" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig autoMapColumns="true"
+        inputData="IFS.PERF_USERS_INSTRUCTIONS" isQueryBased="false"
+        loop="false" treatEmptyStringAsNull="false"
+        treatTextAsEmpty="false" treatTextAsEmptyValue=""
+        treatTextAsNull="false" treatTextAsNullValue="">
+        <logicaldbserverid id="-480fc412:18997eec8c9:-690f"
+            lkname="DatabaseServer" lkpath="DatabaseServer" type="infrastructure_component_resource"/>
+    </resourceConfig>
+</editableResource>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1690478115729" createdUser="RBO152"
+    id="-480fc412:18997eec8c9:-690e"
+    selfDescribing="Sybase (jTDS) (SCRBTSTDK003107) [jdbc:jtds:sqlserver://scrbtstdk011307:1433/RITStoreDb, testing123]"
+    type="database_connection_resource" updatedTimestamp="1690789871369"
+    updatedUser="RBO152" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig maxConnections="100" poolName="DefaultPoolName" transportName="SCRBTSTDK003107">
+        <connectionParams ZOSEnv="false"
+            dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
+            dpsPass="#com.ghc.1!b77b" dpsUser=""
+            driverClass="net.sourceforge.jtds.jdbc.Driver"
+            password="#com.ghc.1!dd2c7262116755360CAE6A5440F2210E7E00128A4AC9"
+            schema=""
+            url="jdbc:jtds:sqlserver://scrbtstdk011307:1433/RITStoreDb"
+            useSsl="false" user="testing123">
+            <dpsSsl useSsl="false"/>
+            <stubSettings maxProcCallCount="10000"
+                maxResultSetRowCount="10000" maxRowCount="10000"
+                password="#com.ghc.1!4972"
+                procedureLearningBehaviour="1" schema=""
+                url="jdbc:jtds:sybase://localhost:4100/&lt;database name>"
+                useIntegratedDB="true" useSsl="false" user=""/>
+            <storedProcedureFilter catalogFilterEnabled="false"
+                catalogFilterPattern="" procedureFilterEnabled="false"
+                procedureFilterPattern="" schemaFilterEnabled="true"
+                schemaFilterPattern=""
+                storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+            <timestampFormatting timestampFormatZero="false"
+                timestampFormattingEnabled="false" timestampPrecision="9"/>
+        </connectionParams>
+    </resourceConfig>
+</editableResource>

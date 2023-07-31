@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1689947543063" createdUser="RBO152"
-    id="-7142cb19:1896e019959:7140"
-    selfDescribing="StubServer - http %%SYSTEM/HOST_NAME%%:8811"
-    type="http_transport" updatedTimestamp="1689947761772"
+<editableResource createdTimestamp="1690643267203" createdUser="RBO152"
+    id="24289fbb:18998672e23:-3c5c"
+    selfDescribing="StubServer - http %%SYSTEM/HOST_NAME%%:8085"
+    type="http_transport" updatedTimestamp="1690643294138"
     updatedUser="RBO152" version="1.0">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig transportName="StubServer" transportTemplateName="HTTP">
         <messageProperties
             ReasonPhrase="No Stub available that matches the request"
             clientConnectionsPerHost="100" credDomain=""
-            credPassword="#com.ghc.1!2414" credPreemptive="false"
+            credPassword="#com.ghc.1!ba0c" credPreemptive="false"
             credType="0" credUser="" httpHost="%%SYSTEM/HOST_NAME%%"
-            httpNtlmDomain="" httpPort="8811" httpProxyHost=""
-            httpProxyPassword="#com.ghc.1!9516" httpProxyPort=""
+            httpNtlmDomain="" httpPort="8085" httpProxyHost=""
+            httpProxyPassword="#com.ghc.1!8fad" httpProxyPort=""
             httpProxyUsername="" httpResourceRoot=""
             httpServerSocketBindAddressOverride=""
             httpServerSocketPortOverride="" httpSocketTimeout=""
@@ -20,7 +20,7 @@
             recType="PROXY" useSsl="false" version="4">
             <kerberos Anon="false" Conf="false" Custom="true"
                 Enabled="false" Integ="false" KDC="" Loc=""
-                MutAuth="false" Principal="" Pwd="#com.ghc.1!769c"
+                MutAuth="false" Principal="" Pwd="#com.ghc.1!03a6"
                 Realm="" RepDet="false" SSO="false" SeqCheck="false"/>
             <oauth authURL="" clientassertion="" clientid=""
                 clientsecret="" enabled="false"

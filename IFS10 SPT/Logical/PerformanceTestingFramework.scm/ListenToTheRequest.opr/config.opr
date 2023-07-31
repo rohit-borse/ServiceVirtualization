@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1690643239532" createdUser="RBO152"
+    id="24289fbb:18998672e23:-3c64" type="operation_resource"
+    updatedTimestamp="1690643401648" updatedUser="RBO152" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig avgTime="0" color="124,199,255"
+        dependencies="24289fbb:18998672e23:-3c5d" maxTime="0"
+        mepEndUsed="true" mepType="IN_OUT" minTime="0"
+        stubDynamicFormatterID="http.text.message.type"
+        stubFormatterID="HTTP_Message" stubTransportID="24289fbb:18998672e23:-3c5d">
+        <invokeHeaderNode name="" type="12" version="1.2">
+            <fieldActionGroup>
+                <fieldAction enabled="false" type="1">
+                    <fieldAction anyOrder="false" enabled="false"
+                        ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                </fieldAction>
+            </fieldActionGroup>
+        </invokeHeaderNode>
+        <stubHeaderConfig>
+            <_c MessageType="http.text.message.type" Method="POST"
+                URL="/IFS/PerfRequest" allowSubPath="true"
+                consumerType="Participate" filterHeaders="false"
+                filterMethod="false" filterResourcePath="true"/>
+        </stubHeaderConfig>
+    </resourceConfig>
+</editableResource>

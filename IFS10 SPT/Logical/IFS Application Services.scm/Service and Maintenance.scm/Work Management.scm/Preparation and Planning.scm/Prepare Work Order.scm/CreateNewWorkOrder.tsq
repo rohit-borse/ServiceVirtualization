@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1689768994681" createdUser="RBO152"
     id="-7142cb19:1896e019959:-7c06" type="test_resource"
-    updatedTimestamp="1690195708111" updatedUser="RBO152" version="1.1">
+    updatedTimestamp="1690481530046" updatedUser="RBO152" version="1.1">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
@@ -12101,8 +12101,20 @@
             </editableResource>
         </testTree>
         <tagDataStore inputMode="SELECT" outputMode="SELECT">
+            <tag defaultValue="" description="" name="TEST_SUITE_NAME">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
             <tag defaultValue="Test work order created by SPT user"
                 description="" name="DIRECTIVE">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="" description="" name="TEST_CASE_NAME">
                 <tagProps>
                     <prop key="interfaceInput" value="true"/>
                     <prop key="scopeExecution" value="true"/>
@@ -12138,6 +12150,12 @@
             </tag>
             <tag defaultValue="" description="" name="PREPARE_WO_OUT"/>
             <tag defaultValue="AAR" description="" name="SITE">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="" description="" name="TEST_EXECUTION_ID">
                 <tagProps>
                     <prop key="interfaceInput" value="true"/>
                     <prop key="scopeExecution" value="true"/>

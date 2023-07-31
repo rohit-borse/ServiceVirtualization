@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1690645193126" createdUser="RBO152"
+    id="24289fbb:18998672e23:-390c" type="test_resource"
+    updatedTimestamp="1690789459708" updatedUser="RBO152" version="1.1">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="24289fbb:18998672e23:-38da"
+                selfDescribing="The SQL Command action is used for executing the Data Manipulation Language statements INSERT, UPDATE, and DELETE against the selected database connection. If desired, the number of rows affected may be validated or stored into a tag."
+                type="sql_command_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig callableStatement="false" description=""
+                    isAutoCommit="true"
+                    name="&quot;CREATE TABLE IFS.PERFORMANCE_TEST_RESULT(&#xd;&#xa;&#x9;REQUEST_ID varchar(50),&#xd;&#xa;&#x9;TEST_EXECUTION_ID varchar(50),&#xd;&#xa;&#x9;TEST_SUITE_NAME varchar(100),&#xd;&#xa;&#x9;TEST_CASE_NAME varchar(100),&#xd;&#xa;&#x9;TEST_STEP_NAME varchar(100),&#xd;&#xa;&#x9;SYSTEM_HOST_NAME varchar(100),&#xd;&#xa;&#x9;SYSTEM_USER_NAME varchar(25),&#xd;&#xa;&#x9;LOGGED_IN_USER varchar(25),&#xd;&#xa;&#x9;REQUEST_TIMESTAMP DATETIME,&#xd;&#xa;&#x9;RESPONSE_TIMESTAMP DATETIME,&#xd;&#xa;&#x9;DURATION int,&#xd;&#xa;&#x9;HTTP_STATUS_CODE varchar(5)&#xd;&#xa;)&quot;"
+                    sqlStatement="CREATE TABLE IFS.PERFORMANCE_TEST_RESULT(&#xd;&#xa;&#x9;REQUEST_ID varchar(50),&#xd;&#xa;&#x9;TEST_EXECUTION_ID varchar(50),&#xd;&#xa;&#x9;TEST_SUITE_NAME varchar(100),&#xd;&#xa;&#x9;TEST_CASE_NAME varchar(100),&#xd;&#xa;&#x9;TEST_STEP_NAME varchar(100),&#xd;&#xa;&#x9;SYSTEM_HOST_NAME varchar(100),&#xd;&#xa;&#x9;SYSTEM_USER_NAME varchar(25),&#xd;&#xa;&#x9;LOGGED_IN_USER varchar(25),&#xd;&#xa;&#x9;REQUEST_TIMESTAMP DATETIME,&#xd;&#xa;&#x9;RESPONSE_TIMESTAMP DATETIME,&#xd;&#xa;&#x9;DURATION int,&#xd;&#xa;&#x9;HTTP_STATUS_CODE varchar(5)&#xd;&#xa;)" timeOffset="0">
+                    <dbserverid id="-480fc412:18997eec8c9:-690f"
+                        lkname="DatabaseServer" lkpath="DatabaseServer" type="infrastructure_component_resource"/>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="24289fbb:18998672e23:-361"
+                selfDescribing="The SQL Command action is used for executing the Data Manipulation Language statements INSERT, UPDATE, and DELETE against the selected database connection. If desired, the number of rows affected may be validated or stored into a tag."
+                type="sql_command_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig callableStatement="false" description=""
+                    isAutoCommit="true"
+                    name="&quot;CREATE TABLE IFS.PERF_USERS_INSTRUCTIONS (&#xd;&#xa;&#x9;REQUEST_ID varchar(50),&#xd;&#xa;&#x9;USERNAME varchar(50),&#xd;&#xa;&#x9;STATUS varchar(100),&#xd;&#xa;&#x9;SCHEDULED_RAMPUP_TIMESTAMP varchar(100),&#xd;&#xa;&#x9;SCHEDULED_RAMPDOWN_TIMESTAMP varchar(100),&#xd;&#xa;&#x9;HOLD_USER varchar(10)&#xd;&#xa;)&quot;"
+                    sqlStatement="CREATE TABLE IFS.PERF_USERS_INSTRUCTIONS (&#xd;&#xa;&#x9;REQUEST_ID varchar(50),&#xd;&#xa;&#x9;USERNAME varchar(50),&#xd;&#xa;&#x9;STATUS varchar(100),&#xd;&#xa;&#x9;SCHEDULED_RAMPUP_TIMESTAMP varchar(100),&#xd;&#xa;&#x9;SCHEDULED_RAMPDOWN_TIMESTAMP varchar(100),&#xd;&#xa;&#x9;HOLD_USER varchar(10)&#xd;&#xa;)" timeOffset="0">
+                    <dbserverid id="-480fc412:18997eec8c9:-690f"
+                        lkname="DatabaseServer" lkpath="DatabaseServer" type="infrastructure_component_resource"/>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="NONE"/>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

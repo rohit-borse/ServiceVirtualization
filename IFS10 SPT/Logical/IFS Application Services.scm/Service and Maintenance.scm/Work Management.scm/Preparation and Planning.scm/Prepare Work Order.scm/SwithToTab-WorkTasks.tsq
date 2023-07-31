@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1689877654963" createdUser="RBO152"
     id="-7142cb19:1896e019959:-41e4" type="test_resource"
-    updatedTimestamp="1689920806148" updatedUser="RBO152" version="1.1">
+    updatedTimestamp="1690541652035" updatedUser="RBO152" version="1.1">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
@@ -204,6 +204,22 @@
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
+                                <_c meTy="String"
+                                    name="RequestSentTimestamp"
+                                    sch="Http Publish" type="7"
+                                    value="%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'RequestSentTimestamp'"
+                                    tN="RequestSentTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
                             </_c>
                             <_c meTy="Boolean" name="followRedirects"
                                 sch="Http Publish" type="8" value="true" version="1.2">
@@ -340,6 +356,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -712,7 +733,15 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
@@ -831,7 +860,7 @@
                             </fieldAction>
                         </fieldActionGroup>
                         <_c meTy="String" name="Method"
-                            sch="Http Publish" type="7" value="POST" version="1.2">
+                            sch="Http Publish" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction exp="POST" type="0"/>
@@ -839,8 +868,7 @@
                             </fieldActionGroup>
                         </_c>
                         <_c meTy="String" name="URL" sch="Http Publish"
-                            type="7"
-                            value="/main/default/clientgateway/ManageMyUserProfile/QueryClientProfileValues" version="1.2">
+                            type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -859,7 +887,7 @@
                                 </fieldAction>
                             </fieldActionGroup>
                             <_c meTy="String" name="Version"
-                                sch="Http Publish" type="7" value="1.1" version="1.2">
+                                sch="Http Publish" type="7" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="1.1" type="0"/>
@@ -877,8 +905,7 @@
                                     </fieldAction>
                                 </fieldActionGroup>
                                 <_c meTy="String" name="user-agent"
-                                    sch="Http Publish" type="7"
-                                    value="IFS .NET Access Provider/1.2" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -887,8 +914,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="os-user"
-                                    sch="Http Publish" type="7"
-                                    value="CRB\RBO152" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -897,8 +923,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="program"
-                                    sch="Http Publish" type="7"
-                                    value="Ifs.Fnd.Explorer.exe" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -907,8 +932,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="machine"
-                                    sch="Http Publish" type="7"
-                                    value="rdp-tcp#1@scrbtstdk003623.crb.apmoller.net" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -918,8 +942,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="x-ifs-capabilities"
-                                    sch="Http Publish" type="7"
-                                    value="02" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="02" type="0"/>
@@ -927,8 +950,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="x-ifs-timeout"
-                                    sch="Http Publish" type="7"
-                                    value="120000" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="120000" type="0"/>
@@ -936,8 +958,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="content-type"
-                                    sch="Http Publish" type="7"
-                                    value="application/octet-stream" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -947,8 +968,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="request-header-length"
-                                    sch="Http Publish" type="7"
-                                    value="148" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="148" type="0"/>
@@ -956,8 +976,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="accept-encoding"
-                                    sch="Http Publish" type="7"
-                                    value="gzip" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="gzip" type="0"/>
@@ -966,8 +985,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="content-encoding"
-                                    sch="Http Publish" type="7"
-                                    value="gzip" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="gzip" type="0"/>
@@ -975,8 +993,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="host"
-                                    sch="Http Publish" type="7"
-                                    value="ifspreprod.apmterminals.com" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -985,8 +1002,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="cookie"
-                                    sch="Http Publish" type="7"
-                                    value="%%Cookie%%" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -995,17 +1011,31 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="content-length"
-                                    sch="Http Publish" type="7"
-                                    value="306" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="306" type="0"/>
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
+                                <_c meTy="String"
+                                    name="RequestSentTimestamp"
+                                    sch="Http Publish" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'RequestSentTimestamp'"
+                                    tN="RequestSentTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
                             </_c>
                             <_c meTy="Boolean" name="followRedirects"
-                                sch="Http Publish" type="8" value="true" version="1.2">
+                                sch="Http Publish" type="8" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="true" type="0"/>
@@ -1014,8 +1044,7 @@
                             </_c>
                         </_c>
                         <_c meTy="String" name="MessageType"
-                            sch="Http Publish" type="7"
-                            value="http.byte.array.message.type" version="1.2">
+                            sch="Http Publish" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -1139,6 +1168,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -1511,14 +1545,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -1633,7 +1672,7 @@
                             </fieldAction>
                         </fieldActionGroup>
                         <_c meTy="String" name="Method"
-                            sch="Http Publish" type="7" value="POST" version="1.2">
+                            sch="Http Publish" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction exp="POST" type="0"/>
@@ -1641,8 +1680,7 @@
                             </fieldActionGroup>
                         </_c>
                         <_c meTy="String" name="URL" sch="Http Publish"
-                            type="7"
-                            value="/main/default/plsqlgateway/AccessPlsql/Invoke" version="1.2">
+                            type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -1661,7 +1699,7 @@
                                 </fieldAction>
                             </fieldActionGroup>
                             <_c meTy="String" name="Version"
-                                sch="Http Publish" type="7" value="1.1" version="1.2">
+                                sch="Http Publish" type="7" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="1.1" type="0"/>
@@ -1679,8 +1717,7 @@
                                     </fieldAction>
                                 </fieldActionGroup>
                                 <_c meTy="String" name="user-agent"
-                                    sch="Http Publish" type="7"
-                                    value="IFS .NET Access Provider/1.2" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -1689,8 +1726,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="os-user"
-                                    sch="Http Publish" type="7"
-                                    value="CRB\RBO152" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -1699,8 +1735,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="program"
-                                    sch="Http Publish" type="7"
-                                    value="Ifs.Fnd.Explorer.exe" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -1709,8 +1744,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="machine"
-                                    sch="Http Publish" type="7"
-                                    value="rdp-tcp#1@scrbtstdk003623.crb.apmoller.net" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -1720,8 +1754,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="x-ifs-capabilities"
-                                    sch="Http Publish" type="7"
-                                    value="02" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="02" type="0"/>
@@ -1729,8 +1762,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="content-type"
-                                    sch="Http Publish" type="7"
-                                    value="application/octet-stream" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -1740,8 +1772,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="request-header-length"
-                                    sch="Http Publish" type="7"
-                                    value="148" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="148" type="0"/>
@@ -1750,8 +1781,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="client-session-id"
-                                    sch="Http Publish" type="7"
-                                    value="ae1569d8-84a4-467a-b9b6-77033099dcef" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -1760,8 +1790,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="accept-encoding"
-                                    sch="Http Publish" type="7"
-                                    value="gzip" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="gzip" type="0"/>
@@ -1769,8 +1798,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="host"
-                                    sch="Http Publish" type="7"
-                                    value="ifspreprod.apmterminals.com" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -1779,8 +1807,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="cookie"
-                                    sch="Http Publish" type="7"
-                                    value="%%Cookie%%" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -1789,17 +1816,31 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="content-length"
-                                    sch="Http Publish" type="7"
-                                    value="504" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="504" type="0"/>
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
+                                <_c meTy="String"
+                                    name="RequestSentTimestamp"
+                                    sch="Http Publish" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'RequestSentTimestamp'"
+                                    tN="RequestSentTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
                             </_c>
                             <_c meTy="Boolean" name="followRedirects"
-                                sch="Http Publish" type="8" value="true" version="1.2">
+                                sch="Http Publish" type="8" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="true" type="0"/>
@@ -1808,8 +1849,7 @@
                             </_c>
                         </_c>
                         <_c meTy="String" name="MessageType"
-                            sch="Http Publish" type="7"
-                            value="http.byte.array.message.type" version="1.2">
+                            sch="Http Publish" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -1933,6 +1973,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -2305,14 +2350,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -2427,7 +2477,7 @@
                             </fieldAction>
                         </fieldActionGroup>
                         <_c meTy="String" name="Method"
-                            sch="Http Publish" type="7" value="POST" version="1.2">
+                            sch="Http Publish" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction exp="POST" type="0"/>
@@ -2435,8 +2485,7 @@
                             </fieldActionGroup>
                         </_c>
                         <_c meTy="String" name="URL" sch="Http Publish"
-                            type="7"
-                            value="/main/default/clientgateway/ManageMyUserProfile/QueryClientProfileValues" version="1.2">
+                            type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -2455,7 +2504,7 @@
                                 </fieldAction>
                             </fieldActionGroup>
                             <_c meTy="String" name="Version"
-                                sch="Http Publish" type="7" value="1.1" version="1.2">
+                                sch="Http Publish" type="7" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="1.1" type="0"/>
@@ -2473,8 +2522,7 @@
                                     </fieldAction>
                                 </fieldActionGroup>
                                 <_c meTy="String" name="user-agent"
-                                    sch="Http Publish" type="7"
-                                    value="IFS .NET Access Provider/1.2" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -2483,8 +2531,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="os-user"
-                                    sch="Http Publish" type="7"
-                                    value="CRB\RBO152" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -2493,8 +2540,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="program"
-                                    sch="Http Publish" type="7"
-                                    value="Ifs.Fnd.Explorer.exe" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -2503,8 +2549,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="machine"
-                                    sch="Http Publish" type="7"
-                                    value="rdp-tcp#1@scrbtstdk003623.crb.apmoller.net" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -2514,8 +2559,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="x-ifs-capabilities"
-                                    sch="Http Publish" type="7"
-                                    value="02" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="02" type="0"/>
@@ -2523,8 +2567,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="x-ifs-timeout"
-                                    sch="Http Publish" type="7"
-                                    value="120000" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="120000" type="0"/>
@@ -2532,8 +2575,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="content-type"
-                                    sch="Http Publish" type="7"
-                                    value="application/octet-stream" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -2543,8 +2585,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="request-header-length"
-                                    sch="Http Publish" type="7"
-                                    value="148" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="148" type="0"/>
@@ -2552,8 +2593,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="accept-encoding"
-                                    sch="Http Publish" type="7"
-                                    value="gzip" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="gzip" type="0"/>
@@ -2562,8 +2602,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="content-encoding"
-                                    sch="Http Publish" type="7"
-                                    value="gzip" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="gzip" type="0"/>
@@ -2571,8 +2610,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="host"
-                                    sch="Http Publish" type="7"
-                                    value="ifspreprod.apmterminals.com" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -2581,8 +2619,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="cookie"
-                                    sch="Http Publish" type="7"
-                                    value="%%Cookie%%" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -2591,17 +2628,31 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="content-length"
-                                    sch="Http Publish" type="7"
-                                    value="311" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="311" type="0"/>
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
+                                <_c meTy="String"
+                                    name="RequestSentTimestamp"
+                                    sch="Http Publish" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'RequestSentTimestamp'"
+                                    tN="RequestSentTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
                             </_c>
                             <_c meTy="Boolean" name="followRedirects"
-                                sch="Http Publish" type="8" value="true" version="1.2">
+                                sch="Http Publish" type="8" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="true" type="0"/>
@@ -2610,8 +2661,7 @@
                             </_c>
                         </_c>
                         <_c meTy="String" name="MessageType"
-                            sch="Http Publish" type="7"
-                            value="http.byte.array.message.type" version="1.2">
+                            sch="Http Publish" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -2735,6 +2785,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -3107,14 +3162,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -3229,7 +3289,7 @@
                             </fieldAction>
                         </fieldActionGroup>
                         <_c meTy="String" name="Method"
-                            sch="Http Publish" type="7" value="POST" version="1.2">
+                            sch="Http Publish" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction exp="POST" type="0"/>
@@ -3237,8 +3297,7 @@
                             </fieldActionGroup>
                         </_c>
                         <_c meTy="String" name="URL" sch="Http Publish"
-                            type="7"
-                            value="/main/default/clientgateway/ManageMyUserProfile/QueryClientProfileValues" version="1.2">
+                            type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -3257,7 +3316,7 @@
                                 </fieldAction>
                             </fieldActionGroup>
                             <_c meTy="String" name="Version"
-                                sch="Http Publish" type="7" value="1.1" version="1.2">
+                                sch="Http Publish" type="7" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="1.1" type="0"/>
@@ -3275,8 +3334,7 @@
                                     </fieldAction>
                                 </fieldActionGroup>
                                 <_c meTy="String" name="user-agent"
-                                    sch="Http Publish" type="7"
-                                    value="IFS .NET Access Provider/1.2" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -3285,8 +3343,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="os-user"
-                                    sch="Http Publish" type="7"
-                                    value="CRB\RBO152" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -3295,8 +3352,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="program"
-                                    sch="Http Publish" type="7"
-                                    value="Ifs.Fnd.Explorer.exe" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -3305,8 +3361,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="machine"
-                                    sch="Http Publish" type="7"
-                                    value="rdp-tcp#1@scrbtstdk003623.crb.apmoller.net" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -3316,8 +3371,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="x-ifs-capabilities"
-                                    sch="Http Publish" type="7"
-                                    value="02" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="02" type="0"/>
@@ -3325,8 +3379,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="x-ifs-timeout"
-                                    sch="Http Publish" type="7"
-                                    value="120000" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="120000" type="0"/>
@@ -3334,8 +3387,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="content-type"
-                                    sch="Http Publish" type="7"
-                                    value="application/octet-stream" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -3345,8 +3397,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="request-header-length"
-                                    sch="Http Publish" type="7"
-                                    value="148" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="148" type="0"/>
@@ -3354,8 +3405,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="accept-encoding"
-                                    sch="Http Publish" type="7"
-                                    value="gzip" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="gzip" type="0"/>
@@ -3364,8 +3414,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="content-encoding"
-                                    sch="Http Publish" type="7"
-                                    value="gzip" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="gzip" type="0"/>
@@ -3373,8 +3422,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="host"
-                                    sch="Http Publish" type="7"
-                                    value="ifspreprod.apmterminals.com" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -3383,8 +3431,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="cookie"
-                                    sch="Http Publish" type="7"
-                                    value="%%Cookie%%" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -3393,17 +3440,31 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="content-length"
-                                    sch="Http Publish" type="7"
-                                    value="310" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="310" type="0"/>
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
+                                <_c meTy="String"
+                                    name="RequestSentTimestamp"
+                                    sch="Http Publish" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'RequestSentTimestamp'"
+                                    tN="RequestSentTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
                             </_c>
                             <_c meTy="Boolean" name="followRedirects"
-                                sch="Http Publish" type="8" value="true" version="1.2">
+                                sch="Http Publish" type="8" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="true" type="0"/>
@@ -3412,8 +3473,7 @@
                             </_c>
                         </_c>
                         <_c meTy="String" name="MessageType"
-                            sch="Http Publish" type="7"
-                            value="http.byte.array.message.type" version="1.2">
+                            sch="Http Publish" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -3537,6 +3597,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -3909,14 +3974,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -4031,7 +4101,7 @@
                             </fieldAction>
                         </fieldActionGroup>
                         <_c meTy="String" name="Method"
-                            sch="Http Publish" type="7" value="POST" version="1.2">
+                            sch="Http Publish" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction exp="POST" type="0"/>
@@ -4039,8 +4109,7 @@
                             </fieldActionGroup>
                         </_c>
                         <_c meTy="String" name="URL" sch="Http Publish"
-                            type="7"
-                            value="/main/default/plsqlgateway/AccessPlsql/Invoke?frmWorkOrderPrepareTab_Cust" version="1.2">
+                            type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -4059,7 +4128,7 @@
                                 </fieldAction>
                             </fieldActionGroup>
                             <_c meTy="String" name="Version"
-                                sch="Http Publish" type="7" value="1.1" version="1.2">
+                                sch="Http Publish" type="7" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="1.1" type="0"/>
@@ -4077,8 +4146,7 @@
                                     </fieldAction>
                                 </fieldActionGroup>
                                 <_c meTy="String" name="user-agent"
-                                    sch="Http Publish" type="7"
-                                    value="IFS .NET Access Provider/1.2" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -4087,8 +4155,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="os-user"
-                                    sch="Http Publish" type="7"
-                                    value="CRB\RBO152" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -4097,8 +4164,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="program"
-                                    sch="Http Publish" type="7"
-                                    value="Ifs.Fnd.Explorer.exe" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -4107,8 +4173,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="machine"
-                                    sch="Http Publish" type="7"
-                                    value="rdp-tcp#1@scrbtstdk003623.crb.apmoller.net" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -4118,8 +4183,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="x-ifs-capabilities"
-                                    sch="Http Publish" type="7"
-                                    value="02" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="02" type="0"/>
@@ -4127,8 +4191,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="content-type"
-                                    sch="Http Publish" type="7"
-                                    value="application/octet-stream" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -4138,8 +4201,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="request-header-length"
-                                    sch="Http Publish" type="7"
-                                    value="148" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="148" type="0"/>
@@ -4148,8 +4210,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="client-session-id"
-                                    sch="Http Publish" type="7"
-                                    value="599ca964-cba3-4f05-bbbc-3926808f5716" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -4158,8 +4219,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="accept-encoding"
-                                    sch="Http Publish" type="7"
-                                    value="gzip" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="gzip" type="0"/>
@@ -4168,8 +4228,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="content-encoding"
-                                    sch="Http Publish" type="7"
-                                    value="gzip" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="gzip" type="0"/>
@@ -4177,8 +4236,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="host"
-                                    sch="Http Publish" type="7"
-                                    value="ifspreprod.apmterminals.com" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -4187,8 +4245,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="cookie"
-                                    sch="Http Publish" type="7"
-                                    value="%%Cookie%%" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -4197,17 +4254,31 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="content-length"
-                                    sch="Http Publish" type="7"
-                                    value="2285" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="2285" type="0"/>
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
+                                <_c meTy="String"
+                                    name="RequestSentTimestamp"
+                                    sch="Http Publish" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'RequestSentTimestamp'"
+                                    tN="RequestSentTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
                             </_c>
                             <_c meTy="Boolean" name="followRedirects"
-                                sch="Http Publish" type="8" value="true" version="1.2">
+                                sch="Http Publish" type="8" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="true" type="0"/>
@@ -4216,8 +4287,7 @@
                             </_c>
                         </_c>
                         <_c meTy="String" name="MessageType"
-                            sch="Http Publish" type="7"
-                            value="http.byte.array.message.type" version="1.2">
+                            sch="Http Publish" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -4349,6 +4419,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -4721,14 +4796,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -4830,8 +4910,7 @@
                 selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly."
                 type="send_request_action" version="1.1">
                 <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-                <resourceConfig description="" enabled="false"
-                    formatter="HTTP_Message"
+                <resourceConfig description="" formatter="HTTP_Message"
                     name="on resource &quot;/main/default/plsqlgateway/AccessPlsql/Invoke?frmWorkOrderPrepareTab_Cust&quot; using schema &quot;Bytes&quot; via &quot;IFSApplicationServer&quot; (2)" transport="-7142cb19:1896e019959:-7ea4">
                     <headerMessage assocdefid="Http Publish"
                         meTy="Message" name="" sch="Http Publish"
@@ -5018,6 +5097,22 @@
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
+                                <_c meTy="String"
+                                    name="RequestSentTimestamp"
+                                    sch="Http Publish" type="7"
+                                    value="%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'RequestSentTimestamp'"
+                                    tN="RequestSentTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
                             </_c>
                             <_c meTy="Boolean" name="followRedirects"
                                 sch="Http Publish" type="8" value="true" version="1.2">
@@ -5135,8 +5230,7 @@
                 selfDescribing="Receive and validate a response to the request you have sent."
                 type="receive_reply_action" version="1.1">
                 <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-                <resourceConfig description="" enabled="false"
-                    formatter="HTTP_Message"
+                <resourceConfig description="" formatter="HTTP_Message"
                     name="using schema &quot;Bytes&quot; (7)"
                     sendRequestID="-7142cb19:1896e019959:-41b4" transport="-7142cb19:1896e019959:-7ea4">
                     <headerMessage assocdefid="Http Receive Reply"
@@ -5154,6 +5248,11 @@
                             <fieldActionGroup>
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
+                                </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
                                 </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
@@ -5527,14 +5626,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -5636,8 +5740,7 @@
                 selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly."
                 type="send_request_action" version="1.1">
                 <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-                <resourceConfig description="" enabled="false"
-                    formatter="HTTP_Message"
+                <resourceConfig description="" formatter="HTTP_Message"
                     name="on resource &quot;/main/default/plsqlgateway/AccessPlsql/Invoke?frmWorkOrderPrepareTab_Cust&quot; using schema &quot;Bytes&quot; via &quot;IFSApplicationServer&quot; (3)" transport="-7142cb19:1896e019959:-7ea4">
                     <headerMessage assocdefid="Http Publish"
                         meTy="Message" name="" sch="Http Publish"
@@ -5824,6 +5927,22 @@
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
+                                <_c meTy="String"
+                                    name="RequestSentTimestamp"
+                                    sch="Http Publish" type="7"
+                                    value="%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'RequestSentTimestamp'"
+                                    tN="RequestSentTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
                             </_c>
                             <_c meTy="Boolean" name="followRedirects"
                                 sch="Http Publish" type="8" value="true" version="1.2">
@@ -5941,8 +6060,7 @@
                 selfDescribing="Receive and validate a response to the request you have sent."
                 type="receive_reply_action" version="1.1">
                 <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
-                <resourceConfig description="" enabled="false"
-                    formatter="HTTP_Message"
+                <resourceConfig description="" formatter="HTTP_Message"
                     name="using schema &quot;Bytes&quot; (8)"
                     sendRequestID="-7142cb19:1896e019959:-41ad" transport="-7142cb19:1896e019959:-7ea4">
                     <headerMessage assocdefid="Http Receive Reply"
@@ -5960,6 +6078,11 @@
                             <fieldActionGroup>
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
+                                </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
                                 </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
@@ -6333,14 +6456,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -6455,7 +6583,7 @@
                             </fieldAction>
                         </fieldActionGroup>
                         <_c meTy="String" name="Method"
-                            sch="Http Publish" type="7" value="POST" version="1.2">
+                            sch="Http Publish" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction exp="POST" type="0"/>
@@ -6463,8 +6591,7 @@
                             </fieldActionGroup>
                         </_c>
                         <_c meTy="String" name="URL" sch="Http Publish"
-                            type="7"
-                            value="/main/default/clientgateway/ObjectConnectionServices/GetCountAttachments" version="1.2">
+                            type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -6483,7 +6610,7 @@
                                 </fieldAction>
                             </fieldActionGroup>
                             <_c meTy="String" name="Version"
-                                sch="Http Publish" type="7" value="1.1" version="1.2">
+                                sch="Http Publish" type="7" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="1.1" type="0"/>
@@ -6501,8 +6628,7 @@
                                     </fieldAction>
                                 </fieldActionGroup>
                                 <_c meTy="String" name="user-agent"
-                                    sch="Http Publish" type="7"
-                                    value="IFS .NET Access Provider/1.2" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -6511,8 +6637,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="os-user"
-                                    sch="Http Publish" type="7"
-                                    value="CRB\RBO152" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -6521,8 +6646,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="program"
-                                    sch="Http Publish" type="7"
-                                    value="Ifs.Fnd.Explorer.exe" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -6531,8 +6655,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="machine"
-                                    sch="Http Publish" type="7"
-                                    value="rdp-tcp#1@scrbtstdk003623.crb.apmoller.net" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -6542,8 +6665,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="x-ifs-capabilities"
-                                    sch="Http Publish" type="7"
-                                    value="02" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="02" type="0"/>
@@ -6551,8 +6673,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="content-type"
-                                    sch="Http Publish" type="7"
-                                    value="application/octet-stream" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -6562,8 +6683,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="request-header-length"
-                                    sch="Http Publish" type="7"
-                                    value="171" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="171" type="0"/>
@@ -6571,8 +6691,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="accept-encoding"
-                                    sch="Http Publish" type="7"
-                                    value="gzip" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="gzip" type="0"/>
@@ -6580,8 +6699,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="host"
-                                    sch="Http Publish" type="7"
-                                    value="ifspreprod.apmterminals.com" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -6590,8 +6708,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="cookie"
-                                    sch="Http Publish" type="7"
-                                    value="%%Cookie%%" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction
@@ -6600,17 +6717,31 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="content-length"
-                                    sch="Http Publish" type="7"
-                                    value="685" version="1.2">
+                                    sch="Http Publish" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="685" type="0"/>
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
+                                <_c meTy="String"
+                                    name="RequestSentTimestamp"
+                                    sch="Http Publish" type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'RequestSentTimestamp'"
+                                    tN="RequestSentTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
                             </_c>
                             <_c meTy="Boolean" name="followRedirects"
-                                sch="Http Publish" type="8" value="true" version="1.2">
+                                sch="Http Publish" type="8" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction type="0">
                                     <fieldAction exp="true" type="0"/>
@@ -6619,8 +6750,7 @@
                             </_c>
                         </_c>
                         <_c meTy="String" name="MessageType"
-                            sch="Http Publish" type="7"
-                            value="http.byte.array.message.type" version="1.2">
+                            sch="Http Publish" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction type="0">
                                     <fieldAction
@@ -6744,6 +6874,11 @@
                                 <fieldAction type="1">
                                     <fieldAction exp="200" type="0"/>
                                 </fieldAction>
+                                <fieldAction
+                                    description="Store copy of field in tag 'StatusCode'"
+                                    tN="StatusCode" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
                             </fieldActionGroup>
                             <filterActionGroup>
                                 <fieldAction enabled="false" type="1">
@@ -7116,14 +7251,19 @@
                             </filterActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11" version="1.2"/>
+                            sch="Http Receive Reply" type="11" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction
+                                    description="Store copy of field in tag 'rcvdTimestamp'"
+                                    tN="rcvdTimestamp" type="2">
+                                    <dataAction type="Copy"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
                     </headerMessage>
                     <subconfig
                         MessageType="http.byte.array.message.type"
-                        URL="" _version="1.1" allowSubPath="false"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="false" filterResourcePath="false"
-                        formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
+                        _version="1.1" formatter="HTTP_Message" transport="-7142cb19:1896e019959:-7ea4"/>
                     <bodyMessage assocdefid="RawByteArray" sch="Bytes"
                         type="12" version="1.2">
                         <fieldActionGroup>
@@ -7222,11 +7362,32 @@
                 </resourceConfig>
             </editableResource>
         </testTree>
-        <tagDataStore inputMode="NONE" outputMode="NONE">
+        <tagDataStore inputMode="SELECT" outputMode="NONE">
+            <tag defaultValue="" description="" name="StatusCode"/>
+            <tag defaultValue="" description="" name="TEST_SUITE_NAME">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="" description="" name="TEST_CASE_NAME">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
             <tag
                 defaultValue="JSESSIONID=F7B0ujtJaEfXPNuTUOsBJUv2akq8GZD2B6tPbtFU727Lxgjuo9KR!-2145352593; _WL_AUTHCOOKIE_JSESSIONID=2tHKnzKoqLfQUQgw1.6f; ApplicationGatewayAffinityCORS=c0f8bfb0f4d4da62d6e942d80216588a; ApplicationGatewayAffinity=c0f8bfb0f4d4da62d6e942d80216588a"
                 description="" name="Cookie"/>
+            <tag defaultValue="" description="" name="RequestSentTimestamp"/>
             <tag defaultValue="" description="" name="ResponseData"/>
+            <tag defaultValue="" description="" name="rcvdTimestamp"/>
+            <tag defaultValue="" description="" name="TEST_EXECUTION_ID">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
             <tag defaultValue="" description="" name="WO_NO"/>
         </tagDataStore>
         <testprops messageClearance="false"/>

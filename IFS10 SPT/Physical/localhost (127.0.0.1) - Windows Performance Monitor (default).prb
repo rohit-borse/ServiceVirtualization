@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1689947544266" createdUser="RBO152"
-    id="-7142cb19:1896e019959:7158"
+<editableResource createdTimestamp="1690643268393" createdUser="RBO152"
+    id="24289fbb:18998672e23:-3c40"
     selfDescribing="localhost (127.0.0.1) - Windows Performance Monitor (default)"
-    type="probe_resource" updatedTimestamp="1689947544266"
+    type="probe_resource" updatedTimestamp="1690643268393"
     updatedUser="RBO152" version="1.0">
     <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
     <resourceConfig defaultFlag="true" name="default"
-        physicalResourceID="-7142cb19:1896e019959:714f" probeID="ghviewer.plugin.perfmon">
+        physicalResourceID="24289fbb:18998672e23:-3c47" probeID="ghviewer.plugin.perfmon">
         <PerfMonDatasource configuration="default"/>
     </resourceConfig>
 </editableResource>

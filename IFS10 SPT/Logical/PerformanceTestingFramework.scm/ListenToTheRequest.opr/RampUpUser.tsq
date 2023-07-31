@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1690790221561" createdUser="RBO152"
+    id="24289fbb:18998672e23:-25f" type="test_resource"
+    updatedTimestamp="1690798418487" updatedUser="RBO152" version="1.1">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="24289fbb:18998672e23:-200"
+                selfDescribing="The log actions enables you to output messages to console and a logging file."
+                type="logging_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig append="true" description=""
+                    flush="true"
+                    loggingMessage="[%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%]  INFO  Waiting until user '%%USERNAME%%' reaches scheduled ramp up timestamp '%%SCHEDULED_RAMPUP_TIMESTAMP%%'.&#xd;&#xa;"
+                    name="[%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%]  INFO  Waiting until user '%%USERNAME%%' reaches scheduled ramp up timestamp '%%SCHEDULED_RAMPUP_TIMESTAMP%%'."
+                    outputFile="" role="0"/>
+            </editableResource>
+            <editableResource id="24289fbb:18998672e23:-1fd"
+                selfDescribing="Repeat test steps while a specified condition is true."
+                type="iterate_while_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig description="" disableMappings="false"
+                    iterationContributor="false" maxIterationTime="0.0"
+                    maxIterationTimeExceededFailsTest="false"
+                    maxTotalIterationTime="0.0"
+                    maxTotalIterationTimeExceededFailsTest="false"
+                    name="gt(formatDateUTC( &quot;%%SCHEDULED_RAMPUP_TIMESTAMP%%&quot;, &quot;dd-MM-yyyy HH:mm:ss.SSS&quot; ), formatDateUTC( &quot;%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%&quot;, &quot;yyyy/MM/dd HH:mm:ss.SSS&quot; ))"
+                    option="OTHER" orExpressions="false"
+                    pacingtime="1.0" pacingtype="DELAY_BETWEEN_TESTS"
+                    performanceDisableValidation="false"
+                    performanceInstances="1"
+                    performanceInterleave="false"
+                    performanceMaximumIterationTime="0"
+                    performanceMaximumTestTime="0"
+                    performanceUseMaximumIterationTime="false"
+                    performanceUseMaximumTestTime="false" remoteAgent=""
+                    reportingLogIterations="1"
+                    reportingLogLogMessages="8" reportingLogMessages="4"
+                    reportingLogScriptExitCodes="8"
+                    reportingLogScriptOutput="8"
+                    reportingLogTagValues="8" reportingLogTimes="8"
+                    runSettingsContinueOnFail="true"
+                    runSettingsDelayEnabled="false"
+                    runSettingsDelayType="Fixed Delay"
+                    runSettingsIterations=""
+                    runSettingsMaximumDelayValue="0"
+                    runSettingsMinimumDelayValue="0"
+                    runSettingsRunFor="0" runSettingsRunType="Once Only"
+                    runSettingsTestDescription=""
+                    useMaxIterationTime="false"
+                    useMaxTotalIterationTime="false" usepacing="true">
+                    <mapper disableFiltersWhenEmpty="false"
+                        knownColumns="" noAutoMap=""/>
+                    <expressions>
+                        <_c expression="gt(formatDateUTC( &quot;%%SCHEDULED_RAMPUP_TIMESTAMP%%&quot;, &quot;dd-MM-yyyy HH:mm:ss.SSS&quot; ), formatDateUTC( &quot;%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%&quot;, &quot;yyyy/MM/dd HH:mm:ss.SSS&quot; ))"/>
+                    </expressions>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="24289fbb:18998672e23:-1f2"
+                selfDescribing="The log actions enables you to output messages to console and a logging file."
+                type="logging_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig append="true" description=""
+                    flush="true"
+                    loggingMessage="[%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%]  INFO  User '%%USERNAME%%' reached scheduled ramp up timestamp '%%SCHEDULED_RAMPUP_TIMESTAMP%%' and is now ready to start test execution.&#xd;&#xa;"
+                    name="[%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%]  INFO  User '%%USERNAME%%' reached scheduled ramp up timestamp '%%SCHEDULED_RAMPUP_TIMESTAMP%%' and is now ready to start test execution."
+                    outputFile="" role="0"/>
+            </editableResource>
+            <editableResource id="24289fbb:18998672e23:-1a6"
+                selfDescribing="Repeat test steps while a specified condition is true."
+                type="iterate_while_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig description="" disableMappings="false"
+                    iterationContributor="false" maxIterationTime="0.0"
+                    maxIterationTimeExceededFailsTest="false"
+                    maxTotalIterationTime="0.0"
+                    maxTotalIterationTimeExceededFailsTest="false"
+                    name="gt(formatDateUTC( &quot;%%SCHEDULED_RAMPDOWN_TIMESTAMP%%&quot;, &quot;dd-MM-yyyy HH:mm:ss.SSS&quot; ), formatDateUTC( &quot;%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%&quot;, &quot;yyyy/MM/dd HH:mm:ss.SSS&quot; ))"
+                    option="OTHER" pacingtime="1.0"
+                    pacingtype="DELAY_BETWEEN_TESTS"
+                    performanceDisableValidation="false"
+                    performanceInstances="1"
+                    performanceInterleave="false"
+                    performanceMaximumIterationTime="0"
+                    performanceMaximumTestTime="0"
+                    performanceUseMaximumIterationTime="false"
+                    performanceUseMaximumTestTime="false" remoteAgent=""
+                    reportingLogIterations="1"
+                    reportingLogLogMessages="8" reportingLogMessages="4"
+                    reportingLogScriptExitCodes="8"
+                    reportingLogScriptOutput="8"
+                    reportingLogTagValues="8" reportingLogTimes="8"
+                    runSettingsContinueOnFail="true"
+                    runSettingsDelayEnabled="false"
+                    runSettingsDelayType="Fixed Delay"
+                    runSettingsIterations=""
+                    runSettingsMaximumDelayValue="0"
+                    runSettingsMinimumDelayValue="0"
+                    runSettingsRunFor="0" runSettingsRunType="Once Only"
+                    runSettingsTestDescription=""
+                    script="gt(formatDateUTC( &quot;%%SCHEDULED_RAMPDOWN_TIMESTAMP%%&quot;, &quot;dd-MM-yyyy HH:mm:ss.SSS&quot; ), formatDateUTC( &quot;%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%&quot;, &quot;yyyy/MM/dd HH:mm:ss.SSS&quot; ))"
+                    type="script:ECMAScript" useMaxIterationTime="false"
+                    useMaxTotalIterationTime="false" usepacing="true">
+                    <mapper disableFiltersWhenEmpty="false"
+                        knownColumns="" noAutoMap=""/>
+                    <testTree>
+                        <editableResource id="24289fbb:18998672e23:-151"
+                            selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags."
+                            type="execute_resource_action" version="1.0">
+                            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                            <resourceConfig childExits="true"
+                                description="" enabled="false"
+                                executeparallel="false"
+                                name=" &quot;Regression Test Scenarios/CMMS/WO Management/Create &amp; Prepare Work Order&quot; with username(%%USERNAME%%)"
+                                parentWaits="false" subDefault="true"
+                                subIndependent="false" subShared="false">
+                                <executeReference
+                                    id="-480fc412:18997eec8c9:-75a1"
+                                    lkname="Create &amp; Prepare Work Order"
+                                    lkpath="Regression Test Scenarios/CMMS/WO Management/Create &amp; Prepare Work Order" type="test_resource"/>
+                                <inbound>
+                                    <binding key="username" value="%%USERNAME%%"/>
+                                </inbound>
+                            </resourceConfig>
+                        </editableResource>
+                        <editableResource id="24289fbb:18998672e23:-b6"
+                            selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags."
+                            type="execute_resource_action" version="1.0">
+                            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                            <resourceConfig childExits="true"
+                                description="" enabled="false"
+                                executeparallel="false"
+                                name=" &quot;Regression Test Scenarios/CMMS/WO Management/Search Work Order&quot; with username(%%USERNAME%%)"
+                                parentWaits="false" subDefault="true"
+                                subIndependent="false" subShared="false">
+                                <executeReference
+                                    id="-480fc412:18997eec8c9:-758b"
+                                    lkname="Search Work Order"
+                                    lkpath="Regression Test Scenarios/CMMS/WO Management/Search Work Order" type="test_resource"/>
+                                <inbound>
+                                    <binding key="username" value="%%USERNAME%%"/>
+                                </inbound>
+                            </resourceConfig>
+                        </editableResource>
+                        <editableResource id="24289fbb:18998672e23:-9e"
+                            selfDescribing="The SQL Query action is used for executing an SQL SELECT statement against the selected database connection. Query results may be validated or stored using the Assert and Store tabs; sample result sets may be configured by running the query using the Test button."
+                            type="sql_query_action" version="1.0">
+                            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                            <resourceConfig assertCellResults="true"
+                                assertColumnResults="true"
+                                callableStatement="false" description=""
+                                interval="0"
+                                name="&quot;SELECT USERNAME, SCHEDULED_RAMPDOWN_TIMESTAMP, HOLD_USER FROM IFS.PERF_USERS_INSTRUCTIONS WHERE USERNAME = '%%USERNAME%%'&quot;, Cell assertions disabled, Column assertions disabled"
+                                repeat="false"
+                                sqlStatement="SELECT USERNAME, SCHEDULED_RAMPDOWN_TIMESTAMP, HOLD_USER FROM IFS.PERF_USERS_INSTRUCTIONS WHERE USERNAME = '%%USERNAME%%'"
+                                timeOffset="0" timeout="0" validateTypes="false">
+                                <dbserverid
+                                    id="-480fc412:18997eec8c9:-690f"
+                                    lkname="DatabaseServer"
+                                    lkpath="DatabaseServer" type="infrastructure_component_resource"/>
+                                <dataModel>
+                                    <_c columnName="USERNAME" columnType="7">
+                                    <columnData name="USERNAME"
+                                    type="7" version="1.2"/>
+                                    <_c type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction
+                                    exp="TST_USER_01" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    </_c>
+                                    <_c
+                                    columnName="SCHEDULED_RAMPDOWN_TIMESTAMP" columnType="7">
+                                    <columnData
+                                    name="SCHEDULED_RAMPDOWN_TIMESTAMP"
+                                    type="7" version="1.2"/>
+                                    <_c type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="31-07-2023 17:00:00.000" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'newTag'"
+                                    tN="SCHEDULED_RAMPDOWN_TIMESTAMP" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    </_c>
+                                    <_c columnName="HOLD_USER" columnType="7">
+                                    <columnData name="HOLD_USER"
+                                    type="7" version="1.2"/>
+                                    <_c type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="FALSE" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'newTag'"
+                                    tN="HOLD_USER" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    </_c>
+                                </dataModel>
+                            </resourceConfig>
+                        </editableResource>
+                        <editableResource id="24289fbb:18998672e23:-6f"
+                            selfDescribing="Repeat test steps while a specified condition is true."
+                            type="iterate_while_action" version="1.0">
+                            <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                            <resourceConfig description=""
+                                disableMappings="false"
+                                iterationContributor="false"
+                                maxIterationTime="0.0"
+                                maxIterationTimeExceededFailsTest="false"
+                                maxTotalIterationTime="0.0"
+                                maxTotalIterationTimeExceededFailsTest="false"
+                                name="and(eq(&quot;%%HOLD_USER%%&quot;, &quot;TRUE&quot;), gt(formatDateUTC( &quot;%%SCHEDULED_RAMPDOWN_TIMESTAMP%%&quot;, &quot;dd-MM-yyyy HH:mm:ss.SSS&quot; ), formatDateUTC( &quot;%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%&quot;, &quot;yyyy/MM/dd HH:mm:ss.SSS&quot; )))"
+                                option="OTHER" pacingtime="1.5"
+                                pacingtype="MIN_DURATION"
+                                performanceDisableValidation="false"
+                                performanceInstances="1"
+                                performanceInterleave="false"
+                                performanceMaximumIterationTime="0"
+                                performanceMaximumTestTime="0"
+                                performanceUseMaximumIterationTime="false"
+                                performanceUseMaximumTestTime="false"
+                                remoteAgent=""
+                                reportingLogIterations="1"
+                                reportingLogLogMessages="8"
+                                reportingLogMessages="4"
+                                reportingLogScriptExitCodes="8"
+                                reportingLogScriptOutput="8"
+                                reportingLogTagValues="8"
+                                reportingLogTimes="8"
+                                runSettingsContinueOnFail="true"
+                                runSettingsDelayEnabled="false"
+                                runSettingsDelayType="Fixed Delay"
+                                runSettingsIterations=""
+                                runSettingsMaximumDelayValue="0"
+                                runSettingsMinimumDelayValue="0"
+                                runSettingsRunFor="0"
+                                runSettingsRunType="Once Only"
+                                runSettingsTestDescription=""
+                                script="and(eq(&quot;%%HOLD_USER%%&quot;, &quot;TRUE&quot;), gt(formatDateUTC( &quot;%%SCHEDULED_RAMPDOWN_TIMESTAMP%%&quot;, &quot;dd-MM-yyyy HH:mm:ss.SSS&quot; ), formatDateUTC( &quot;%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%&quot;, &quot;yyyy/MM/dd HH:mm:ss.SSS&quot; )))"
+                                type="script:ECMAScript"
+                                useMaxIterationTime="false"
+                                useMaxTotalIterationTime="false" usepacing="true">
+                                <mapper disableFiltersWhenEmpty="false"
+                                    knownColumns="" noAutoMap=""/>
+                                <testTree>
+                                    <editableResource
+                                    id="24289fbb:18998672e23:-66"
+                                    selfDescribing="The SQL Query action is used for executing an SQL SELECT statement against the selected database connection. Query results may be validated or stored using the Assert and Store tabs; sample result sets may be configured by running the query using the Test button."
+                                    type="sql_query_action" version="1.0">
+                                    <loggingConfiguration
+                                    debug="false" writeStubEventsToDB="false"/>
+                                    <resourceConfig
+                                    assertCellResults="true"
+                                    assertColumnResults="true"
+                                    callableStatement="false"
+                                    description="" interval="0"
+                                    name="&quot;SELECT USERNAME, SCHEDULED_RAMPDOWN_TIMESTAMP, HOLD_USER FROM IFS.PERF_USERS_INSTRUCTIONS WHERE USERNAME = '%%USERNAME%%'&quot;, Cell assertions disabled, Column assertions disabled (2)"
+                                    repeat="false"
+                                    sqlStatement="SELECT USERNAME, SCHEDULED_RAMPDOWN_TIMESTAMP, HOLD_USER FROM IFS.PERF_USERS_INSTRUCTIONS WHERE USERNAME = '%%USERNAME%%'"
+                                    timeOffset="0" timeout="0" validateTypes="false">
+                                    <dbserverid
+                                    id="-480fc412:18997eec8c9:-690f"
+                                    lkname="DatabaseServer"
+                                    lkpath="DatabaseServer" type="infrastructure_component_resource"/>
+                                    <dataModel>
+                                    <_c
+                                    columnName="USERNAME" columnType="7">
+                                    <columnData
+                                    name="USERNAME"
+                                    type="7" version="1.2"/>
+                                    <_c type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+
+                                    <fieldAction
+                                    exp="TST_USER_01" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    </_c>
+                                    <_c
+                                    columnName="SCHEDULED_RAMPDOWN_TIMESTAMP" columnType="7">
+                                    <columnData
+                                    name="SCHEDULED_RAMPDOWN_TIMESTAMP"
+                                    type="7" version="1.2"/>
+                                    <_c type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="31-07-2023 17:00:00.000" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'newTag'"
+                                    tN="SCHEDULED_RAMPDOWN_TIMESTAMP" type="2">
+
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    </_c>
+                                    <_c
+                                    columnName="HOLD_USER" columnType="7">
+                                    <columnData
+                                    name="HOLD_USER"
+                                    type="7" version="1.2"/>
+                                    <_c type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="FALSE" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'newTag'"
+                                    tN="HOLD_USER" type="2">
+
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    </_c>
+                                    </dataModel>
+                                    </resourceConfig>
+                                    </editableResource>
+                                </testTree>
+                            </resourceConfig>
+                        </editableResource>
+                    </testTree>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="24289fbb:18998672e23:-61"
+                selfDescribing="The log actions enables you to output messages to console and a logging file."
+                type="logging_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig append="true" description=""
+                    flush="true"
+                    loggingMessage="[%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%]  INFO  User '%%USERNAME%%' reached scheduled ramp down timestamp '%%SCHEDULED_RAMPDOWN_TIMESTAMP%%' and is now logging off.&#xd;&#xa;"
+                    name="[%%SYSTEM/CURRENT_DATE%% %%SYSTEM/CURRENT_TIME%%]  INFO  User '%%USERNAME%%' reached scheduled ramp down timestamp '%%SCHEDULED_RAMPDOWN_TIMESTAMP%%' and is now logging off."
+                    outputFile="" role="0"/>
+            </editableResource>
+            <editableResource id="24289fbb:18998672e23:57"
+                selfDescribing="Execute a test as a sub-test.  Pass and return data using interface tags."
+                type="execute_resource_action" version="1.0">
+                <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+                <resourceConfig childExits="true" description=""
+                    executeparallel="false"
+                    name=" &quot;IFS Application Services/Authentication/LogOffUser&quot; with Username(%%USERNAME%%)"
+                    parentWaits="false" subDefault="true"
+                    subIndependent="false" subShared="false">
+                    <executeReference id="24289fbb:18998672e23:-30d5"
+                        lkname="LogOffUser"
+                        lkpath="IFS Application Services/Authentication/LogOffUser" type="test_resource"/>
+                    <inbound>
+                        <binding key="Username" value="%%USERNAME%%"/>
+                    </inbound>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="SELECT" outputMode="SELECT">
+            <tag defaultValue="" description="" name="USERNAME">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="interfaceOutput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="" description="" name="HOLD_USER"/>
+            <tag defaultValue="30-07-2029 12:58:00.654" description="" name="SCHEDULED_RAMPDOWN_TIMESTAMP"/>
+            <tag defaultValue="" description="" name="SCHEDULED_RAMPUP_TIMESTAMP">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>
